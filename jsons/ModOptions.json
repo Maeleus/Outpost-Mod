@@ -1,0 +1,6 @@
+{
+	modUrl:"https://github.com/Maeleus/Outpost-Mod",
+	author:Maeleus,
+	constants:{},
+	unitsToRemove:["Cannon","Artillery","Gatling Gun","Machine Gun"]
+}
