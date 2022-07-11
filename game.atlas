@@ -1,0 +1,237 @@
+
+game.png
+size: 2048, 128
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+ImprovementIcons/Army Base
+  rotate: false
+  xy: 4, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Artillery Fort
+  rotate: false
+  xy: 112, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Bastion Fort
+  rotate: false
+  xy: 328, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Castrum
+  rotate: false
+  xy: 436, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Cavalry Fort
+  rotate: false
+  xy: 544, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Medieval Castle
+  rotate: false
+  xy: 1084, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Pill Box
+  rotate: false
+  xy: 1192, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Watchtower
+  rotate: false
+  xy: 1624, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Army Base
+  rotate: false
+  xy: 1732, 48
+  size: 64, 65
+  orig: 64, 65
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Artillery Fort
+  rotate: false
+  xy: 1804, 79
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Bastion Fort
+  rotate: false
+  xy: 1844, 83
+  size: 32, 30
+  orig: 32, 30
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Castrum
+  rotate: false
+  xy: 1884, 81
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Cavalry Fort
+  rotate: false
+  xy: 1924, 79
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Fort
+  rotate: false
+  xy: 1804, 36
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Medieval Castle
+  rotate: false
+  xy: 1924, 39
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Pill Box
+  rotate: false
+  xy: 1964, 51
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Watchtower
+  rotate: false
+  xy: 1924, 4
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Atomic Cannon
+  rotate: false
+  xy: 1732, 13
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Field Artillery
+  rotate: false
+  xy: 1964, 86
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Field Cannon
+  rotate: false
+  xy: 2004, 86
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/French 75
+  rotate: false
+  xy: 1844, 48
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Howitzer
+  rotate: false
+  xy: 1884, 46
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Siege Artillery
+  rotate: false
+  xy: 2004, 51
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Siege Cannon
+  rotate: false
+  xy: 1844, 13
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Siege Mortar
+  rotate: false
+  xy: 1884, 11
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+UnitIcons/Atomic Cannon
+  rotate: false
+  xy: 220, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Field Artillery
+  rotate: false
+  xy: 652, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Field Cannon
+  rotate: false
+  xy: 760, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/French 75
+  rotate: false
+  xy: 868, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Howitzer
+  rotate: false
+  xy: 976, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Siege Artillery
+  rotate: false
+  xy: 1300, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Siege Cannon
+  rotate: false
+  xy: 1408, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Siege Mortar
+  rotate: false
+  xy: 1516, 13
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
