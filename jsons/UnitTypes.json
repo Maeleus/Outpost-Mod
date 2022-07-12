@@ -1,0 +1,93 @@
+[
+{
+	"name": "Archery",
+	"movementType": "Land",
+	"uniques": [
+		"[+1] Sight <in [Fort] tiles>",
+		"[+1] Range <in [Fort] tiles>",
+		"[+1] Sight <in [Castrum] tiles>",
+		"[+1] Range <in [Castrum] tiles>",
+		"[+1] Sight <in [Medieval Castle] tiles>",
+		"[+1] Range <in [Medieval Castle] tiles>"
+	]
+},
+{
+	"name": "Armored",
+	"movementType": "Land",
+	"uniques": [
+		"[+4] Sight <in [Army Base] tiles>",
+		"[+3] Movement <in [Army Base] tiles>"
+	]
+},
+{
+	"name": "Gunpowder",
+	"movementType": "Land",
+	"uniques": [
+		"[+1] Sight <in [Bastion Fort] tiles>",
+		"[+1] Movement <in [Bastion Fort] tiles>",
+		"[+2] Sight <in [Cavalry Fort] tiles>",
+		"[+2] Movement <in [Cavalry Fort] tiles>",
+		"[+4] Sight <in [Army Base] tiles>",
+		"[+3] Movement <in [Army Base] tiles>"
+	]
+},
+{
+	"name": "Helicopter",
+	"movementType": "Land",
+	"uniques": [
+		"Ignores Zone of Control",
+		"Can pass through impassable tiles",
+		"Unable to capture cities",
+		"[+4] Sight <in [Army Base] tiles>",
+		"[+4] Movement <in [Army Base] tiles>"
+	]
+},
+{
+	"name": "Mounted",
+	"movementType": "Land",
+	"uniques": [
+		"[+1] Sight <in [Medieval Castle] tiles>",
+		"[+1] Movement <in [Medieval Castle] tiles>",
+		"[+2] Sight <in [Cavalry Fort] tiles>",
+		"[+2] Movement <in [Cavalry Fort] tiles>"
+	]
+},
+{
+	"name": "Ranged Gunpowder",
+	"movementType": "Land",
+	"uniques": [
+		"[+1] Sight <in [Medieval Castle] tiles>",
+		"[+1] Range <in [Medieval Castle] tiles>",
+		"[+2] Sight <in [Bastion Fort] tiles>",
+		"[+1] Range <in [Bastion Fort] tiles>",
+		"[+1] additional attacks per turn <in [Bastion Fort] tiles>",
+		"[+2] Sight <in [Artillery Fort] tiles>",
+		"[+2] Range <in [Artillery Fort] tiles>",
+		"[+2] additional attacks per turn <in [Artillery Fort] tiles>",
+		"[+1] Movement <in [Artillery Fort] tiles>",
+		"[+3] Sight <in [Pill Box] tiles>",
+		"[+3] Range <in [Pill Box] tiles>",
+		"[+3] additional attacks per turn <in [Pill Box] tiles>",
+		"[+2] Movement <in [Pill Box] tiles>"
+	]
+},
+{
+	"name": "Scout",
+	"movementType": "Land",
+	"uniques": [
+		"[+1] Sight <in [Watchtower] tiles>",
+		"[+2] Sight <in [Fort] tiles>",
+		"[+2] Sight <in [Castrum] tiles>"
+	]
+},
+{
+	"name": "Sword",
+	"movementType": "Land"
+	"uniques": [
+		"[+1] Sight <in [Castrum] tiles>",
+		"[+1] Movement <in [Castrum] tiles>",
+		"[+1] Sight <in [Medieval Castle] tiles>",
+		"[+1] Movement <in [Medieval Castle] tiles>"
+	]
+}
+]
