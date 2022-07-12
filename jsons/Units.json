@@ -1,0 +1,416 @@
+[
+/*Classical Era */
+{
+	"name": "Legion",
+	"unitType": "Sword",
+	"uniqueTo": "Rome",
+	"replaces": "Swordsman",
+	"movement": 2,
+	"strength": 17,
+	"cost": 75,
+	"hurryCostModifier": 20,
+	"requiredTech": "Iron Working",
+	"upgradesTo": "Longswordsman",
+	"uniques": [
+		"Can build [Road] improvements on tiles",
+		"Can build [Castrum] improvements on tiles",
+		"Consumes [1] [Iron]"
+	],
+	"attackSound": "metalhit"
+},
+{
+	"name": "Catapult",
+	"unitType": "Siege",
+	"movement": 2,
+	"strength": 8,
+	"rangedStrength": 8,
+	"cost": 75,
+	"requiredTech": "Mathematics",
+	"obsoleteTech": "Physics",
+	"upgradesTo": "Trebuchet",
+	"uniques": [
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+		"[-10]% Strength <when defending>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight",
+		"Never appears as a Barbarian unit"
+	],
+	"hurryCostModifier": 20,
+	"attackSound": "throw"
+},
+{
+	"name": "Ballista",
+	"unitType": "Siege",
+	"replaces": "Catapult",
+	"uniqueTo": "Rome",
+	"movement": 2,
+	"strength": 10,
+	"rangedStrength": 10,
+	"cost": 75,
+	"requiredTech": "Mathematics",
+	"obsoleteTech": "Physics",
+	"upgradesTo": "Trebuchet",
+	"uniques": [
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+		"[-10]% Strength <when defending>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight"
+	],
+	"hurryCostModifier": 20,
+	"attackSound": "throw"
+	},
+/*Medival Era */
+{
+	"name": "Crossbowman",
+	"unitType": "Archery",
+	"range": 2,
+	"movement": 2,
+	"strength": 18,
+	"rangedStrength": 18,
+	"cost": 120,
+	"requiredTech": "Machinery",
+	"upgradesTo": "Field Cannon",
+	"obsoleteTech": "Chemistry",
+	"attackSound": "arrow",
+	"uniques": ["[-25]% Strength <when defending>"]
+},
+{
+	"name": "Chu-Ko-Nu",
+	"unitType": "Archery",
+	"replaces": "Crossbowman",
+	"uniqueTo": "China",
+	"range": 2,
+	"movement": 2,
+	"strength": 14,
+	"rangedStrength": 14,
+	"cost": 120,
+	"requiredTech": "Machinery",
+	"upgradesTo": "Field Cannon",
+	"promotions": ["Logistics"],
+	"obsoleteTech": "Chemistry",
+	"attackSound": "arrow",
+  "uniques": ["[-5]% Strength <when defending>"]
+},
+{
+	"name": "Longbowman",
+	"unitType": "Archery",
+	"replaces": "Crossbowman",
+	"uniqueTo": "England",
+	"range": 3,
+	"movement": 2,
+	"strength": 18,
+	"rangedStrength": 18,
+	"cost": 120,
+	"requiredTech": "Machinery",
+	"upgradesTo": "Field Cannon",
+	"obsoleteTech": "Chemistry",
+	"attackSound": "arrow",
+  "uniques": ["[-25]% Strength <when defending>"]
+},
+{
+	"name": "Trebuchet",
+	"unitType": "Siege",
+	"range": 2,
+	"movement": 2,
+	"strength": 14,
+	"rangedStrength": 14,
+	"cost": 120,
+	"requiredTech": "Physics",
+	"upgradesTo": "Siege Cannon",
+	"uniques": [
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Fort] tiles> <when attacking>",
+		"[-15]% Strength <when defending>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight"
+		],
+	"obsoleteTech": "Chemistry",
+	"attackSound": "throw"
+},
+{
+	"name": "Hwach'a",
+	"unitType": "Siege",
+	"replaces": "Trebuchet",
+	"uniqueTo": "Korea",
+	"range": 2,
+	"movement": 2,
+	"strength": 26,
+	"rangedStrength": 26,
+	"cost": 120,
+	"requiredTech": "Physics",
+	"upgradesTo": "Siege Cannon",
+	"uniques": [
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Fort] tiles> <when attacking>",
+		"[-50]% Strength <when defending>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack"
+		],
+	"obsoleteTech": "Chemistry",
+	"attackSound": "throw"
+},
+/* Renaisance Era */
+{
+	"name": "Field Cannon", /* Should be prerequisite for Frigate */
+	"unitType": "Ranged Gunpowder",
+	"range": 2,
+	"movement": 2,
+	"strength": 28,
+	"rangedStrength": 28,
+	"cost": 185,
+	"requiredTech": "Chemistry",
+	"upgradesTo": "Field Artillery",
+	"uniques": [
+		"[-25]% Strength <when defending>"
+		],
+	"obsoleteTech": "Industrialization",
+	"attackSound": "cannon"
+},
+{
+	"name": "Siege Cannon",
+	"unitType": "Siege",
+	"range": 2,
+	"movement": 2,
+	"strength": 20,
+	"rangedStrength": 20,
+	"cost": 185,
+	"requiredTech": "Chemistry",
+	"upgradesTo": "Siege Artillery",
+	"uniques": [
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Fort] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight",
+		"[-25]% Strength <when defending>"
+		],
+	"obsoleteTech": "Dynamite",
+	"attackSound": "cannon"
+},
+/* Industrial Era */
+{
+	"name": "Field Artillery",
+	"unitType": "Ranged Gunpowder",
+	"range": 2,
+	"movement": 2,
+	"strength": 32,
+	"rangedStrength": 32,
+	"cost": 225,
+	"requiredTech": "Industrialization",
+	"upgradesTo": "Howitzer",
+	"uniques": [
+		"Ranged attacks may be performed over obstacles",
+		"[-25]% Strength <when defending>"
+		],
+	"obsoleteTech": "Dynamite",
+	"attackSound": "cannon"
+},
+{
+	"name": "French 75",
+	"unitType": "Ranged Gunpowder",
+	"uniqueTo": "France",
+	"replaces": "Field Artillery",
+	"range": 2,
+	"movement": 3,
+	"strength": 32,
+	"rangedStrength": 32,
+	"cost": 225,
+	"requiredTech": "Industrialization",
+	"upgradesTo": "Howitzer",
+	"promotions": ["Logistics"],
+	"uniques": [
+		"Ranged attacks may be performed over obstacles",
+		"[-25]% Strength <when defending>"
+		],
+	"obsoleteTech": "Dynamite",
+	"attackSound": "cannon"
+},
+{
+	"name": "Howitzer",
+	"unitType": "Ranged Gunpowder",
+	"range": 3,
+	"movement": 2,
+	"strength": 40,
+	"rangedStrength": 40,
+	"cost": 320,
+	"requiredTech": "Dynamite",
+	"upgradesTo": "Rocket Artillery",
+	"uniques": [
+		"Ranged attacks may be performed over obstacles",
+		"[-25]% Strength <when defending>"
+		],
+	"obsoleteTech": "Rocketry",
+	"attackSound": "artillery"
+},
+{
+	"name": "Siege Artillery",
+	"unitType": "Siege",
+	"range": 3,
+	"movement": 2,
+	"strength": 30,
+	"rangedStrength": 30,
+	"cost": 320,
+	"requiredTech": "Dynamite",
+	"upgradesTo": "Siege Mortar",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Fort] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Bastion Fort] tiles> <when attacking>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight",
+		"[-25]% Strength <when defending>"
+		],
+	"obsoleteTech": "Ballistics",
+	"attackSound": "artillery"
+},
+/* Modern Era */
+{
+	"name": "Siege Mortar",
+	"unitType": "Siege",
+	"range": 4,
+	"movement": 2,
+	"strength": 50,
+	"rangedStrength": 50,
+	"cost": 390,
+	"requiredTech": "Ballistics",
+	"upgradesTo": "Rocket Artillery",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"Rough terrain penalty",
+		"Consumes [1] [Oil]",
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Fort] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Bastion Fort] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Artillery Fort] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Cavalry Fort] tiles> <when attacking>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight",
+		"[-50]% Strength <when defending>"
+		],
+	"obsoleteTech": "Rocketry",
+	"attackSound": "artillery"
+},
+/* Atomic Era */
+{
+	"name": "Rocket Artillery",
+	"unitType": "Siege",
+	"range": 3,
+	"movement": 3,
+	"strength": 60,
+	"rangedStrength": 60,
+	"cost": 425,
+	"requiredTech": "Rocketry",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"Consumes [1] [Aluminum]",
+		"Can carry [1] [Missile] units",
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Fort] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Bastion Fort] tiles> <when attacking>",
+    "[+100]% Strength <when fighting in [Artillery Fort] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Cavalry Fort] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Army Base] tiles> <when attacking>",
+		"[+100]% Strength <when fighting in [Pill Box] tiles> <when attacking>",
+		"[-25]% Strength <when defending>"
+		],
+	"attackSound": "missile"
+},
+{
+	"name": "Atomic Cannon",
+	"unitType": "Siege",
+	"range": 5,
+	"movement": 2,
+	"strength": 100,
+	"rangedStrength": 100,
+	"cost": 600,
+	"requiredTech": "Nuclear Fission",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"Never appears as a Barbarian unit",
+		"Consumes [1] [Uranium]",
+		"Nuclear weapon of Strength [1]",
+		"Only available <if [Manhattan Project] is constructed>",
+		"Blast radius [1]",
+		"[-50]% Strength <when defending>"
+		],
+	"attackSound": "nuke"
+}
+/* Civilians */
+{
+	"name": "Great General",
+	"unitType": "Civilian",
+	"movement": 2,
+	"uniques": [
+		"Can start an [8]-turn golden age",
+		"[15]% Strength bonus for [Military] units within [2] tiles",
+		"[20]% Strength bonus for [Military] units within [2] tiles <in [Medieval Castle] tiles>",
+		"[25]% Strength bonus for [Military] units within [2] tiles <in [Bastion Fort] tiles>",
+		"[30]% Strength bonus for [Military] units within [3] tiles <in [Cavalry Fort] tiles>",
+		"[30]% Strength bonus for [Military] units within [3] tiles <in [Artillery Fort] tiles>",
+		"[40]% Strength bonus for [Military] units within [4] tiles <in [Pill Box] tiles>",
+		"[40]% Strength bonus for [Military] units within [4] tiles <in [Army Base] tiles>",
+		/*"[25]% Strength bonus for [Military] units within [4] tiles <in [Forward Ops Base] tiles>",*/
+		"Can construct [Medieval Castle] <after discovering [Chivalry]> <before discovering [Architecture]>",
+		"Can construct [Bastion Fort] <after discovering [Architecture]> <before discovering [Military Science]>",
+		"Can construct [Cavalry Fort] <after discovering [Military Science]> <before discovering [Replaceable Parts]>",
+		"Can construct [Artillery Fort] <after discovering [Military Science]> <before discovering [Replaceable Parts]>",
+		"Can construct [Pill Box] <after discovering [Replaceable Parts]> <before discovering [Advanced Ballistics]>",
+		"Can construct [Army Base] <after discovering [Replaceable Parts]>",
+		"Great Person - [War]",
+		"Unbuildable",
+		"Uncapturable"
+	]
+},
+{
+	"name": "Khan",
+	"unitType": "Civilian",
+	"uniqueTo": "Mongolia",
+	"replaces": "Great General",
+	"movement": 5,
+	"uniques": [
+		"Can start an [8]-turn golden age",
+		"All adjacent units heal [+15] HP when healing",
+		"[+15] HP when healing",
+		"[15]% Strength bonus for [Military] units within [2] tiles",
+		"[20]% Strength bonus for [Military] units within [2] tiles <in [Medieval Castle] tiles>",
+		"[25]% Strength bonus for [Military] units within [2] tiles <in [Bastion Fort] tiles>",
+		"[30]% Strength bonus for [Military] units within [3] tiles <in [Cavalry Fort] tiles>",
+		"[30]% Strength bonus for [Military] units within [3] tiles <in [Artillery Fort] tiles>",
+		"[40]% Strength bonus for [Military] units within [4] tiles <in [Pill Box] tiles>",
+		"[40]% Strength bonus for [Military] units within [4] tiles <in [Army Base] tiles>",
+		/*"[25]% Strength bonus for [Military] units within [4] tiles <in [Forward Ops Base] tiles>",*/
+		"Can construct [Medieval Castle] <after discovering [Chivalry]> <before discovering [Architecture]>",
+		"Can construct [Bastion Fort] <after discovering [Architecture]> <before discovering [Military Science]>",
+		"Can construct [Cavalry Fort] <after discovering [Military Science]> <before discovering [Replaceable Parts]>",
+		"Can construct [Artillery Fort] <after discovering [Military Science]> <before discovering [Replaceable Parts]>",
+		"Can construct [Pill Box] <after discovering [Replaceable Parts]> <before discovering [Advanced Ballistics]>",
+		"Can construct [Army Base] <after discovering [Replaceable Parts]>",
+		"Great Person - [War]",
+		"Unbuildable",
+		"Uncapturable"
+	]
+}
+]
