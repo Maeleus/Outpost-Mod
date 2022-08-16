@@ -1,238 +1,162 @@
 [
-/* Ancient Era */
-	{
-		"name": "Watchtower",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 6,
-		"techRequired": "Masonry",
-		"uniques": [
-			"Gives a defensive bonus of [10]%",
-			"Can be built outside your borders",
-			"[+6 Culture] <after discovering [Architecture]>",
-			"Cannot be built on [All] tiles <before discovering [Masonry]> <after discovering [Architecture]>"
-		],
-		"civilopediaText": [
-			{"text": "Ancient era outpost used to observe unsettled frontiers. Weak to siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+1 sight for Scouts"}
-		]
-	},
 /* Classical Era */	
 	{
-		"name": "Fort",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 6, 
+		"name": "Watchtower",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
 		"techRequired": "Engineering",
 		"uniques": [
 			"Gives a defensive bonus of [25]%",
-			"Can be built just outside your borders",
-			"[+6 Culture] <after discovering [Architecture]>"
-			"Cannot be built on [All] tiles <before discovering [Engineering]> <after discovering [Architecture]>"
-		],
-		"civilopediaText": [
-			{"text": "Classical era outpost used to defend borders. Strong against classical siege engines but weak against medieval and more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight for Scouts"},
-			{"text": "+1 sight, +1 range for archery units"}
+			"[+3 Culture] <after discovering [Chivalry]>",
+			"Consumes [1] [Outpost Supplies]",
+			"Provides [1] [Outpost Supplies] <after discovering [Chivalry]>",
+			"Cannot be built on [All] tiles <before discovering [Engineering]>",
+			"Cannot be built on [All] tiles <after discovering [Chivalry]>"
 		]
 	},
 	{
 		"name": "Castrum",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow",],
 		"uniqueTo": "Rome",
-		"replaces": "Fort",
+		"replaces": "Watchtower",
 		"turnsToBuild": 6,
 		"techRequired": "Engineering",
 		"uniques": [
 			"Gives a defensive bonus of [30]%",
-			"Can be built outside your borders",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
-			"[+6 Culture] <after discovering [Chivalry]>",
-			"Cannot be built on [All] tiles <before discovering [Engineering]> <after discovering [Architecture]>"
-		],
-		"civilopediaText": [
-			{"text": "Classical era Roman outpost used to defend borders. Also used to expand borders and claim resources. Strong against classical siege engines but weak against medieval and more advanced siege engines."}
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight for Scouts"},
-			{"text": "+1 sight, +1 range for archery units"},
-			{"text": "+1 sight, +1 movement for sword units"}
+			"[+5 Culture]",
+			"Consumes [1] [Outpost Supplies]",
+			"Provides [1] [Outpost Supplies] <after discovering [Chivalry]>",
+			"Cannot be built on [All] tiles <before discovering [Engineering]>",
+			"Cannot be built on [All] tiles <after discovering [Chivalry]>"
 		]
 	},
 /* Medieval Era */	
 	{
 		"name": "Medieval Castle",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
+		"techRequired": "Chivalry",
 		"uniques": [
-			"Great Improvement",
 			"Gives a defensive bonus of [50]%",
-			"Can be built outside your borders",
-			"Removes removable features when built",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
 			"Adjacent enemy units ending their turn take [10] damage",
 			"[+1 Gold, +1 Food] for each adjacent [Farm]",
-			"[+6 Culture] <after discovering [Architecture]>"
-		],
-		"civilopediaText": [
-			{"text": "Medieval era outpost used to defend and expand borders and claim resources. Strong against medieval siege engines but weak against renaissance and more advanced siege engines."}
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+1 sight, +1 range for archery units"},
-			{"text": "+1 sight, +1 movement for mounted units (horseman, knight)"},
-			{"text": "+1 sight, +1 range for ranged gunpowder units (field cannon)"},
-			{"text": "+1 sight, +1 movement for sword units (spearmen, swordsman)"},
-			{"text": "+20% Strength bonus for units within 2 tiles for Great Generals"}
+			"[+3 Culture] <after discovering [Architecture]>",
+			"Consumes [2] [Outpost Supplies]",
+			"Provides [2] [Outpost Supplies] <after discovering [Architecture]>",
+			"Cannot be built on [All] tiles <before discovering [Chivalry]>",
+			"Cannot be built on [All] tiles <after discovering [Architecture]>"
 		]
 	},
 /* Renaisance Era */	
 	{
 		"name": "Bastion Fort",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": [
-			"Great Improvement",
-			"Gives a defensive bonus of [75]%",
-			"Can be built outside your borders",
-			"Removes removable features when built",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Adjacent enemy units ending their turn take [20] damage",
-			"[+1 Gold, +1 Food] for each adjacent [Farm]",
-			"[+6 Culture] <after discovering [Military Science]>"
-		],
-		"civilopediaText": [
-			{"text": "Renaissance era outpost specifically designed to attack with and defend against cannons. Provides cannon support to valleys and sea coasts. Strong against renaissance era siege cannons but weak against industrial and more advanced siege artillery."}
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight, +1 range, +1 attack for ranged gunpowder units (field cannon)"},
-			{"text": "+1 sight, +1 movement for gunpowder units"},
-			{"text": "+25% Strength bonus for units within 2 tiles for Great Generals"}
-		]
-	},
-	/*{
-		"name": "Gun Emplacement",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 1,
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
 		"techRequired": "Architecture",
 		"uniques": [
-			"Gives a defensive bonus of [50]%",
-			"Can be built just outside your borders",
-			"[+6 Culture] <after discovering [Advanced Ballistics]>",
-			"Cannot be built on [All] tiles <before discovering [Architecture]> <after discovering [Advanced Ballistics]>"
+			"Gives a defensive bonus of [75]%",
+			"Adjacent enemy units ending their turn take [20] damage",
+			"[+1 Gold, +1 Food] for each adjacent [Farm]",
+			"[+3 Culture] <after discovering [Military Science]>",
+			"Consumes [3] [Outpost Supplies]",
+			"Provides [3] [Outpost Supplies] <after discovering [Military Science]>",
+			"Cannot be built on [All] tiles <before discovering [Architecture]>",
+			"Cannot be built on [All] tiles <after discovering [Military Science]>"
 		]
-	},*/
+	},
 /* Industrial Era */	
 	{
 		"name": "Cavalry Fort",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
+		"techRequired": "Military Science",
 		"uniques": [
-			"Great Improvement",
 			"Gives a defensive bonus of [100]%",
-			"Can be built outside your borders",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Removes removable features when built",
 			"Adjacent enemy units ending their turn take [30] damage",
 			"[+2 Gold, +2 Food] for each adjacent [Farm]",
-			"[+6 Culture] <after discovering [Replaceable Parts]>",
-		],
-		"civilopediaText": [
-			{"text": "Industrial era outpost specifically designed to defend frontier regions. Used as a base of operations to quickly dispatch cavalry units to intercept incoming threats. Strong against industrial era siege artillery but weak against modern and more advanced siege artillery."}
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight, +2 movement for mounted units (cavalry, lancers)"}
-			{"text": "+2 sight, +2 movement for gunpowder units (musketman, rifleman)"},
-			{"text": "+30% Strength bonus for units within 3 tiles for Great Generals"}
+			"[+3 Culture] <after discovering [Replaceable Parts]>",
+			"Consumes [4] [Outpost Supplies]",
+			"Provides [4] [Outpost Supplies] <after discovering [Replaceable Parts]>",
+			"Cannot be built on [All] tiles <before discovering [Military Science]>",
+			"Cannot be built on [All] tiles <after discovering [Replaceable Parts]>"
 		]
 	},
 	{
 		"name": "Artillery Fort",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
+		"techRequired": "Military Science",
 		"uniques": [
-			"Great Improvement",
 			"Gives a defensive bonus of [100]%",
-			"Can be built outside your borders",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Removes removable features when built",
 			"Adjacent enemy units ending their turn take [30] damage",
-			"[+6 Culture] <after discovering [Replaceable Parts]>",
-		],
-		"civilopediaText": [
-			{"text": "Industrial era outpost specifically designed to provide sustained artillery bombardment to incoming threats. Strong against industrail era siege cannons but weak against modern and more advanced siege artillery."}
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight, +2 range, +2 attack, +1 movement for ranged gunpowder units (cannon)"},
-			{"text": "+30% Strength bonus for units within 3 tiles for Great Generals"}
+			"[+2 Gold, +2 Food] for each adjacent [Farm]",
+			"[+3 Culture] <after discovering [Replaceable Parts]>",
+			"Consumes [4] [Outpost Supplies]",
+			"Provides [4] [Outpost Supplies] <after discovering [Replaceable Parts]>",
+			"Cannot be built on [All] tiles <before discovering [Military Science]>",
+			"Cannot be built on [All] tiles <after discovering [Replaceable Parts]>"
 		]
 	},
 	/*{
 		"name": "Navy Yard",
 		"terrainsCanBeBuiltOn": ["Coast","Atoll"],
-		"turnsToBuild": 1,
+		"turnsToBuild": 6,
 		"techRequired": "Military Science",
 		"uniques": [
-			"Great Improvement",
 			"Gives a defensive bonus of [100]%",
-			"Can be built just outside your borders",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Costs [5] gold per turn when in your territory <before discovering [Ballistics]>",
-			"Adjacent enemy units ending their turn take [30] damage <before discovering [Ballistics]>",
-			"[+6 Culture] <after discovering [Replaceable Parts]>",
+			"Adjacent enemy units ending their turn take [30] damage",
+			"[+3 Culture] <after discovering [Replaceable Parts]>",
+			"Consumes [4] [Outpost Supplies]",
+			"Provides [4] [Outpost Supplies] <after discovering [Replaceable Parts]>",
+			"Cannot be built on [All] tiles <before discovering [Military Science]>",
+			"Cannot be built on [All] tiles <after discovering [Replaceable Parts]>"
 		]
 	},*/
 /* Modern Era */	
 	{
 		"name": "Army Base",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
+		"techRequired": "Replaceable Parts",
 		"uniques": [
-			"Great Improvement",
 			"Gives a defensive bonus of [125]%",
-			"Can be built outside your borders",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Removes removable features when built",
-			"Adjacent enemy units ending their turn take [50] damage"
-		],
-		"civilopediaText": [
-			{"text": "Modern era outpost specifically designed for regional command and control. Used as a base of operations to quickly dispatch units to intercept incoming threats. Strong against modern era siege artillery but weak against more advanced siege artillery."}
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+4 sight, +3 movement for gunpowder units (infantry)"},
-			{"text": "+4 sight, +3 movement for armored units (tank)"},
-			{"text": "+4 sight, +4 movement for helicopter units"},
-			{"text": "+40% Strength bonus for units within 4 tiles for Great Generals"}
+			"Adjacent enemy units ending their turn take [50] damage",
+			"[+2 Gold, +2 Food] for each adjacent [Farm]",
+			"[+2 Production, +2 Science] for each adjacent [Mine]",
+			"Consumes [5] [Outpost Supplies]",
+			"Cannot be built on [All] tiles <before discovering [Replaceable Parts]>"
 		]
 	},
 	/*{
 		"name": "Navy Base",
 		"terrainsCanBeBuiltOn": ["Coast","Atoll"],
-		"turnsToBuild": 1,
+		"turnsToBuild": 6,
 		"techRequired": "Replaceable Parts",
 		"uniques": [
 			"Gives a defensive bonus of [125]%",
-			"Can be built just outside your borders",
-			"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Costs [6] gold per turn when in your territory",
-			"Adjacent enemy units ending their turn take [50] damage"
+			"Adjacent enemy units ending their turn take [50] damage",
+			"[+2 Gold, +2 Food] for each adjacent [Farm]",
+			"[+2 Production, +2 Science] for each adjacent [Mine]",
+			"Consumes [5] [Outpost Supplies]",
+			"Cannot be built on [All] tiles <before discovering [Replaceable Parts]>"
 		]
 	},*/
 	{
 		"name": "Pill Box",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": [
-			"Great Improvement",
-			"Gives a defensive bonus of [125]%",
-			"Can be built outside your borders",
-			"Removes removable features when built",
-			"Adjacent enemy units ending their turn take [50] damage <before discovering [Advanced Ballistics]>",
-			"[+6 Culture] <after discovering [Advanced Ballistics]>"
-		],
-		"civilopediaText": [
-			{"text": "Modern era outpost specifically designed to provide unrelenting artillery bombardment to incoming threats. Strong against modern era siege cannons but weak against modern and more advanced siege artillery and missiles."}
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+3 sight, +3 range, +3 attack, +2 movement for ranged gunpowder units (cannon)"},
-			{"text": "+40% Strength bonus for units within 4 tiles for Great Generals"}
-		]
-	}
-	/*{
-		"name": "Forward Ops Base",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 1,
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
 		"techRequired": "Replaceable Parts",
 		"uniques": [
-			"Gives a defensive bonus of [100]%",
-			"Can be built outside your borders",
-			"Cannot be built on [All] tiles <before discovering [Replaceable Parts]>"
+			"Gives a defensive bonus of [125]%",
+			"Adjacent enemy units ending their turn take [50] damage",
+			"[+2 Gold, +2 Food] for each adjacent [Farm]",
+			"[+2 Production, +2 Science] for each adjacent [Mine]",
+			"[+3 Culture] <after discovering [Advanced Ballistics]>",
+			"Consumes [5] [Outpost Supplies]",
+			"Provides [5] [Outpost Supplies] <after discovering [Advanced Ballistics]>",
+			"Cannot be built on [All] tiles <before discovering [Replaceable Parts]>",
+			"Cannot be built on [All] tiles <after discovering [Advanced Ballistics]>"
+			
 		]
-	}*/
+	}
 ]
