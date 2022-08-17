@@ -3,8 +3,8 @@
 	"name": "Archery",
 	"movementType": "Land",
 	"uniques": [
-		"[+1] Sight <in [Fort] tiles>",
-		"[+1] Range <in [Fort] tiles>",
+		"[+1] Sight <in [Watchtower] tiles>",
+		"[+1] Range <in [Watchtower] tiles>",
 		"[+1] Sight <in [Castrum] tiles>",
 		"[+1] Range <in [Castrum] tiles>",
 		"[+1] Sight <in [Medieval Castle] tiles>",
@@ -15,6 +15,7 @@
 	"name": "Armored",
 	"movementType": "Land",
 	"uniques": [
+		"[+125]% Strength <in [Army Base] tiles> <when defending>",
 		"[+4] Sight <in [Army Base] tiles>",
 		"[+3] Movement <in [Army Base] tiles>"
 	]
@@ -46,8 +47,13 @@
 	"name": "Mounted",
 	"movementType": "Land",
 	"uniques": [
+		"[+50]% Strength <in [Medieval Castle] tiles> <when defending>",
 		"[+1] Sight <in [Medieval Castle] tiles>",
 		"[+1] Movement <in [Medieval Castle] tiles>",
+		"[+75]% Strength <in [Bastion Fort] tiles> <when defending>",
+		"[+1] Sight <in [Bastion Fort] tiles>",
+		"[+1] Movement <in [Bastion Fort] tiles>",
+		"[+100]% Strength <in [Medieval Castle] tiles> <when defending>",
 		"[+2] Sight <in [Cavalry Fort] tiles>",
 		"[+2] Movement <in [Cavalry Fort] tiles>"
 	]
@@ -72,22 +78,15 @@
 	]
 },
 {
-	"name": "Scout",
-	"movementType": "Land",
-	"uniques": [
-		"[+1] Sight <in [Watchtower] tiles>",
-		"[+2] Sight <in [Fort] tiles>",
-		"[+2] Sight <in [Castrum] tiles>"
-	]
-},
-{
 	"name": "Sword",
 	"movementType": "Land"
 	"uniques": [
 		"[+1] Sight <in [Castrum] tiles>",
 		"[+1] Movement <in [Castrum] tiles>",
 		"[+1] Sight <in [Medieval Castle] tiles>",
-		"[+1] Movement <in [Medieval Castle] tiles>"
+		"[+1] Movement <in [Medieval Castle] tiles>",
+		"[+1] Sight <in [Bastion Fort] tiles>",
+		"[+1] Movement <in [Bastion Fort] tiles>"
 	]
 }
 ]
