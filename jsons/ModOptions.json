@@ -1,6 +1,6 @@
 {
-	modUrl:"https://github.com/Maeleus/Outpost-Mod",
-	author:Maeleus,
-	constants:{},
-	unitsToRemove:["Cannon","Artillery","Gatling Gun","Machine Gun"]
+unitsToRemove:[Gatling Gun,Cannon,Machine Gun,Artillery,Jet Fighter],
+techsToRemove:[Railroads],
+modUrl:"https://github.com/Maeleus/Outpost-Mod",
+author:Maeleus,constants:{unitUpgradeCost:{}}
 }
