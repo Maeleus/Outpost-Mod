@@ -44,7 +44,9 @@ tile you want to neutralize before your main assualt force arrives.
 Several units throughtout the game now recieve free upgrades when certain more advanced techs are researched. For instance, the Frigate recieves a 
 30% strength bonus once Industrialization is researched. This simulates how 18th and 19th century wooden ships were upgraded to steam frigates in 
 the late 19th century that had modernized weapons and armor plating. I did it this way to limit the number of new units but still acount for 
-technological improvements.
+technological improvements that are not explicitly captured in the tech tree.
+
+Railroads are now made available with Industrialization instead of a standalone Railroads tech in the Modern Era. This is more historically accurate.
 
 I did not design this mod with any other mods in mind so it is probably not compatible with other mods. I have not tried so I don't know for sure. 
 All images are in Fantasy Hex. If you find any errors or would like imaages in something other than Fantasy Hex then please reach out to me or send 
