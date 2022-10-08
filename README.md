@@ -10,6 +10,9 @@ build nothing but Outposts. Treating Outpost Sites as a bonus resource encourage
 sometimes Outpost Sites will be clumped together). Also, since the Outpost Sites are a resource the AI will "accidently" settle cities in tactically 
 beneficial locations.
 
+Great Generals provide better bonuses while garrisoned in Outposts that increase throughout the eras. The Great General bonus while in an Outpost 
+increases in strength bonus and range with a maximum of 30% strength bonus for units within 5 tiles in the Modern Era.
+
 Siege units and siege related promotions still have bonuses against cities but now provide bonuses against Outposts. So while a well used Outpost
 is formidable it is still weak to siege units and units with siege related promotions.
 
