@@ -1,0 +1,221 @@
+[
+{
+	"columnNumber": 8,
+	"era": "Renaissance era",
+	"techCost": 1150,
+	"buildingCost": 250,
+	"wonderCost": 625,
+	"techs": [
+	{
+		"name": "Navigation",
+		"row": 2,
+		"uniques": ["[+1] Sight <for [Water] units>"],
+		"prerequisites": ["Astronomy"],
+		"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
+	},
+	{
+		"name": "Architecture",
+		"row": 4,
+		"prerequisites": ["Acoustics","Banking"],
+		"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
+	},
+	{
+		"name": "Economics",
+		"row": 6,
+		"prerequisites": ["Banking","Printing Press"],
+		"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
+	},
+	{
+		"name": "Metallurgy",
+		"row": 9,
+		"prerequisites": ["Printing Press","Gunpowder"],
+		"quote": "'There never was a good knife made of bad steel.' - Benjamin Franklin"
+	},
+	{
+		"name": "Chemistry",
+		"row": 10,
+		"prerequisites": ["Gunpowder"],
+		"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
+	}
+	]
+},
+{
+	"columnNumber": 9,
+	"era": "Industrial era",
+	"techCost": 1600,
+	"buildingCost": 300,
+	"wonderCost": 750,
+	"techs": [
+	{
+		"name": "Archaeology",
+		"row": 2,
+		"prerequisites": ["Navigation","Architecture"],
+		"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
+	},
+	{
+		"name": "Scientific Theory",
+		"row": 4,
+		"prerequisites": ["Architecture","Economics"],
+		"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
+	},
+	{
+		"name": "Industrialization",
+		"row": 6,
+		"prerequisites": ["Economics"],
+		"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
+	},
+	{
+		"name": "Rifling",
+		"row": 7,
+		"prerequisites": ["Economics","Metallurgy"],
+		"quote": "'It is well that war is so terrible, or we should grow too fond of it.' - Robert E. Lee"
+	},
+	{
+		"name": "Military Science",
+		"row": 9,
+		"prerequisites": ["Metallurgy","Chemistry"],
+		"quote": "'Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.' - George S. Patton"
+	},
+	{
+		"name": "Fertilizer",
+		"row": 10,
+		"prerequisites": ["Chemistry"],
+		"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
+	}
+	]
+},
+{
+	"columnNumber": 10,
+	"era": "Industrial era",
+	"techCost": 2350,
+	"buildingCost": 360,
+	"wonderCost": 900, // Note that this column doesn't actually have any wonders. This just continues the wonderCost = 2.5 * buildingCost pattern from the last few columns.
+	"techs": [
+	{
+		"name": "Biology",
+		"row": 2,
+		"prerequisites": ["Archaeology","Scientific Theory"],
+		"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
+	},
+	{
+		"name": "Electricity",
+		"row": 3,
+		"prerequisites": ["Scientific Theory"],
+		"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
+	},
+	{
+		"name": "Steam Power",
+		"row": 6,
+		"uniques": ["[+1] Movement <for [Embarked] units>"],
+		"prerequisites": ["Industrialization","Scientific Theory","Rifling"],
+		"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
+	},
+	{
+		"name": "Dynamite",
+		"row": 9,
+		"prerequisites": ["Fertilizer","Military Science","Rifling"],
+		"quote": "'As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.' - Christopher Dawson"
+	}
+	]
+},
+{
+	"columnNumber": 11,
+	"era": "Modern era",
+	"techCost": 3100,
+	"buildingCost": 500,
+	"wonderCost": 1060,
+	"techs": [
+	{
+		"name": "Refrigeration",
+		"row": 2,
+		"prerequisites": ["Biology", "Electricity"], //todo: offshore platform should need this
+		"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
+	},
+	{
+		"name": "Radio",
+		"row": 3,
+		"prerequisites": ["Electricity"],
+		"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
+	},
+	{
+		"name": "Replaceable Parts",
+		"row": 4,
+		"prerequisites": ["Electricity","Steam Power"],
+		"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+	},
+	{
+		"name": "Flight",
+		"row": 6,
+		"prerequisites": ["Steam Power"],
+		"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
+	},
+	{
+		"name": "Combustion",
+		"row": 8,
+		"prerequisites": ["Steam Power","Dynamite"],
+		"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
+	}
+	]
+},
+{
+	"columnNumber": 12,
+	"era": "Modern era",
+	"techCost": 4100,
+	"buildingCost": 500,
+	"wonderCost": 1250,
+	"techs": [
+	{
+		"name": "Plastics",
+		"row": 3,
+		"prerequisites": ["Radio","Replaceable Parts"],
+		"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
+	},
+	{
+		"name": "Electronics",
+		"row": 5,
+		"prerequisites": ["Replaceable Parts", "Flight"],
+		"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
+	},
+	{
+		"name": "Ballistics",
+		"row": 7,
+		"prerequisites": ["Flight"],
+		"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
+	},
+	]
+},
+{
+	"columnNumber": 13,
+	"era": "Atomic era",
+	"techCost": 5100,
+	"buildingCost": 500,
+	"wonderCost": 1250,
+	"techs": [
+	{
+		"name": "Pharmaceuticals",
+		"row": 2,
+		"prerequisites": ["Plastics","Refrigeration"],
+		"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
+	},
+	{
+		"name": "Atomic Theory",
+		"row": 4,
+		"prerequisites": ["Plastics","Electronics"],
+		"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
+	},
+	{
+		"name": "Radar",
+		"row": 6,
+		"uniques": ["[+3] Sight <for [Water] units>"],
+		"prerequisites": ["Ballistics","Electronics"],
+		"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
+	},
+	{
+		"name": "Combined Arms",
+		"row": 8,
+		"prerequisites": ["Ballistics","Combustion"],
+		"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
+	}
+	]
+},
+]
