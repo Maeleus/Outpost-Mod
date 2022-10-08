@@ -1,221 +1,60 @@
 [
-/* Classical Era */	
-	{
-		"name": "Watchtower",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"turnsToBuild": 6,
-		"techRequired": "Engineering",
-		"uniques": [
-			"Gives a defensive bonus of [25]%",
-			"[+3 Culture] <after discovering [Chivalry]>",
-			"Consumes [1] [Outpost Supplies]",
-			"Provides [1] [Outpost Supplies] <after discovering [Chivalry]>",
-			"Cannot be built on [All] tiles <before discovering [Engineering]>",
-			"Cannot be built on [All] tiles <after discovering [Chivalry]>"
-		],
-		"civilopediaText": [
-			{"text": "Classical era outpost. Strong against clasical units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+1 sight, +1 range for Archery units"}
-			{"text": "+20% Strength bonus for Military units within 2 tiles for Great Generals"}
-		]
-	},
-	{
-		"name": "Castrum",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"uniqueTo": "Rome",
-		"replaces": "Watchtower",
-		"turnsToBuild": 6,
-		"techRequired": "Engineering",
-		"uniques": [
-			"Gives a defensive bonus of [30]%",
-			"[+5 Culture]",
-			"Consumes [1] [Outpost Supplies]",
-			"Provides [1] [Outpost Supplies] <after discovering [Chivalry]>",
-			"Cannot be built on [All] tiles <before discovering [Engineering]>",
-			"Cannot be built on [All] tiles <after discovering [Chivalry]>"
-		],
-		"civilopediaText": [
-			{"text": "Classical era Roman outpost. Strong against clasical units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+1 sight, +1 range for Archery units"},
-			{"text": "+1 sight, +1 movement for Sword units"},
-			{"text": "+25% Strength bonus for Military units within 2 tiles for Great Generals"}
-		]
-	},
-/* Medieval Era */	
-	{
-		"name": "Medieval Castle",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"turnsToBuild": 6,
-		"techRequired": "Chivalry",
-		"uniques": [
-			"Gives a defensive bonus of [50]%",
-			"Adjacent enemy units ending their turn take [10] damage",
-			"[+1 Gold, +1 Food] for each adjacent [Farm]",
-			"[+3 Culture] <after discovering [Architecture]>",
-			"Consumes [2] [Outpost Supplies]",
-			"Provides [2] [Outpost Supplies] <after discovering [Architecture]>",
-			"Cannot be built on [All] tiles <before discovering [Chivalry]>",
-			"Cannot be built on [All] tiles <after discovering [Architecture]>"
-		],
-		"civilopediaText": [
-			{"text": "Medieval era outpost. Strong against medieval and less advanced units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+1 sight, +1 range for Archery units"},
-			{"text": "+1 sight, +1 range for Ranged Gunpowder units"},
-			{"text": "+1 sight, +1 movement for Sword units"},
-			{"text": "+1 sight, +1 movement for Mounted units"},
-			{"text": "+25% Strength bonus for Military units within 2 tiles for Great Generals"}
-
-		]
-	},
-/* Renaissance Era */	
-	{
-		"name": "Bastion Fort",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"turnsToBuild": 6,
-		"techRequired": "Architecture",
-		"uniques": [
-			"Gives a defensive bonus of [75]%",
-			"Adjacent enemy units ending their turn take [20] damage",
-			"[+1 Gold, +1 Food] for each adjacent [Farm]",
-			"[+3 Culture] <after discovering [Military Science]>",
-			"Consumes [3] [Outpost Supplies]",
-			"Provides [3] [Outpost Supplies] <after discovering [Military Science]>",
-			"Cannot be built on [All] tiles <before discovering [Architecture]>",
-			"Cannot be built on [All] tiles <after discovering [Military Science]>"
-		],
-		"civilopediaText": [
-
-			{"text": "Renaissance era outpost. Strong against renaissance and less advanced units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight, +1 range, +1 attack for Ranged Gunpowder units"},
-			{"text": "+1 sight, +1 movement for Gunpowder units"},
-			{"text": "+1 sight, +1 movement for Sword units"},
-			{"text": "+1 sight, +1 movement for Mounted units"},
-			{"text": "+30% Strength bonus for Military units within 2 tiles for Great Generals"}
-		]
-	},
-/* Industrial Era */	
-	{
-		"name": "Cavalry Fort",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"turnsToBuild": 6,
-		"techRequired": "Military Science",
-		"uniques": [
-			"Gives a defensive bonus of [100]%",
-			"Adjacent enemy units ending their turn take [30] damage",
-			"[+2 Gold, +2 Food] for each adjacent [Farm]",
-			"[+3 Culture] <after discovering [Replaceable Parts]>",
-			"Consumes [4] [Outpost Supplies]",
-			"Provides [4] [Outpost Supplies] <after discovering [Replaceable Parts]>",
-			"Cannot be built on [All] tiles <before discovering [Military Science]>",
-			"Cannot be built on [All] tiles <after discovering [Replaceable Parts]>"
-		],
-		"civilopediaText": [
-			{"text": "Industrial era outpost. Strong against industrial and less advanced units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight, +2 movement for Gunpowder units"},
-			{"text": "+2 sight, +2 movement for Mounted units"},
-			{"text": "+35% Strength bonus for Military units within 2 tiles for Great Generals"}
-		]
-	},
-	{
-		"name": "Artillery Fort",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"turnsToBuild": 6,
-		"techRequired": "Military Science",
-		"uniques": [
-			"Gives a defensive bonus of [100]%",
-			"Adjacent enemy units ending their turn take [30] damage",
-			"[+2 Gold, +2 Food] for each adjacent [Farm]",
-			"[+3 Culture] <after discovering [Replaceable Parts]>",
-			"Consumes [4] [Outpost Supplies]",
-			"Provides [4] [Outpost Supplies] <after discovering [Replaceable Parts]>",
-			"Cannot be built on [All] tiles <before discovering [Military Science]>",
-			"Cannot be built on [All] tiles <after discovering [Replaceable Parts]>"
-		],
-		"civilopediaText": [
-			{"text": "Industrial era outpost. Strong against industrial and less advanced units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+2 sight, +2 range, +2 attacks, +1 movement for Ranged Gunpowder units"},
-			{"text": "+35% Strength bonus for Military units within 2 tiles for Great Generals"}
-		]
-	},
-	/*{
-		"name": "Navy Yard",
-		"terrainsCanBeBuiltOn": ["Coast","Atoll"],
-		"turnsToBuild": 6,
-		"techRequired": "Military Science",
-		"uniques": [
-			"Gives a defensive bonus of [100]%",
-			"Adjacent enemy units ending their turn take [30] damage",
-			"[+3 Culture] <after discovering [Replaceable Parts]>",
-			"Consumes [4] [Outpost Supplies]",
-			"Provides [4] [Outpost Supplies] <after discovering [Replaceable Parts]>",
-			"Cannot be built on [All] tiles <before discovering [Military Science]>",
-			"Cannot be built on [All] tiles <after discovering [Replaceable Parts]>"
-		]
-	},*/
-/* Modern Era */	
-	{
-		"name": "Army Base",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"turnsToBuild": 6,
-		"techRequired": "Replaceable Parts",
-		"uniques": [
-			"Gives a defensive bonus of [125]%",
-			"Adjacent enemy units ending their turn take [50] damage",
-			"[+2 Gold, +2 Food] for each adjacent [Farm]",
-			"[+2 Production, +2 Science] for each adjacent [Mine]",
-			"Consumes [5] [Outpost Supplies]",
-			"Cannot be built on [All] tiles <before discovering [Replaceable Parts]>"
-		],
-		"civilopediaText": [
-			{"text": "Modern era outpost. Strong against modern and less advanced units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+4 sight, +3 movement for Gunpowder units"},
-			{"text": "+4 sight, +3 movement for Armored units"},
-			{"text": "+4 sight, +4 movement for Helicopter units"},
-			{"text": "+40% Strength bonus for Military units within 2 tiles for Great Generals"}
-		]
-	},
-	/*{
-		"name": "Navy Base",
-		"terrainsCanBeBuiltOn": ["Coast","Atoll"],
-		"turnsToBuild": 6,
-		"techRequired": "Replaceable Parts",
-		"uniques": [
-			"Gives a defensive bonus of [125]%",
-			"Adjacent enemy units ending their turn take [50] damage",
-			"[+2 Gold, +2 Food] for each adjacent [Farm]",
-			"[+2 Production, +2 Science] for each adjacent [Mine]",
-			"Consumes [5] [Outpost Supplies]",
-			"Cannot be built on [All] tiles <before discovering [Replaceable Parts]>"
-		]
-	},*/
-	{
-		"name": "Pill Box",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		"turnsToBuild": 6,
-		"techRequired": "Replaceable Parts",
-		"uniques": [
-			"Gives a defensive bonus of [125]%",
-			"Adjacent enemy units ending their turn take [50] damage",
-			"[+2 Gold, +2 Food] for each adjacent [Farm]",
-			"[+2 Production, +2 Science] for each adjacent [Mine]",
-			"[+3 Culture] <after discovering [Advanced Ballistics]>",
-			"Consumes [5] [Outpost Supplies]",
-			"Provides [5] [Outpost Supplies] <after discovering [Advanced Ballistics]>",
-			"Cannot be built on [All] tiles <before discovering [Replaceable Parts]>",
-			"Cannot be built on [All] tiles <after discovering [Advanced Ballistics]>"
-		],
-		"civilopediaText": [
-			{"text": "Modern era outpost. Strong against modern and less advanced units. Weak against more advanced siege engines."},
-			{"text": "Bonuses for garrisoned units:"},
-			{"text": "+3 sight, +3 range, +3 attacks, +2 movement for Ranged Gunpowder units"},
-			{"text": "+40% Strength bonus for Military units within 2 tiles for Great Generals"}
-		]
-	}
+{
+	"name": "Outpost",
+	"turnsToBuild": 6,
+	"techRequired": "Construction",
+	"uniques": [
+		"Can only be built to improve a resource",
+		"Pillaging this improvement yields approximately [+20 Gold]"
+	],
+	"civilopediaText": [
+		{"text": "Outposts are built on Outpost Sites to defend home territory and subjagate enemy lands. They provide defense and offense bonuses to garrisoned units including Great Generals. They are weak against siege engines."},
+		{"text": "Classical Era Bonuses for Garrisoned Units:"},
+		{"text": "+25% defense for Archery and Sword units"},
+		{"text": "+1 sight for Archery and Sword units"},
+		{"text": "+1 movement for Sword units"},
+		{"text": "+20% Strength bonus for Military units within 2 tiles for Great Generals"},
+		{"text": "Medieval Era Bonuses for Garrisoned Units:"},
+		{"text": "+50% defense for Archery, Sword, and Mounted units"},
+		{"text": "+2 sight for Archery and Sword units"},
+		{"text": "+2 movement for Sword and Mounted units"},
+		{"text": "+25% Strength bonus for Military units within 2 tiles for Great Generals"},
+		{"text": "Renaissance Era Bonuses for Garrisoned Units:"},
+		{"text": "+75% defense for Mounted, Gunpowder, and Ranged Gunpowder units"},
+		{"text": "+2 sight for Gunpowder and Ranged Gunpowder units"},
+		{"text": "+3 movement for Mounted units"},
+		{"text": "+2 movement for Gunpowder units"},
+		{"text": "+1 range for Ranged Gunpowder units"},
+		{"text": "+30% Strength bonus for Military units within 3 tiles for Great Generals"},
+		{"text": "Industrial Era Bonuses for Garrisoned Units:"},
+		{"text": "+100% defense for Mounted, Gunpowder, and Ranged Gunpowder units"},
+		{"text": "+1 movement for Ranged Gunpowder units"},
+		{"text": "+3 movement for Gunpowder units"},
+		{"text": "+4 movement for Mounted units"},
+		{"text": "+2 range for Ranged Gunpowder units"},
+		{"text": "+1 attack for Ranged Gunpowder units"},
+		{"text": "+30% Strength bonus for Military units within 4 tiles for Great Generals"},
+		{"text": "Modern Era Bonuses for Garrisoned Units:"},
+		{"text": "+125% defense for Armored, Gunpowder, and Ranged Gunpowder units"},
+		{"text": "+2 sight for Armored units"},
+		{"text": "+4 sight for Armored, Gunpowder, Helicopter, Ranged Gunpowder units after discovering Radar"},
+		{"text": "+4 movement for Armored, Helicopter, and Gunpowder units"},
+		{"text": "+2 movement for Ranged Gunpowder units"},
+		{"text": "+3 range for Ranged Gunpowder units"},
+		{"text": "+2 attacks for Ranged Gunpowder units"},
+		{"text": "+30% Strength bonus for Military units within 5 tiles for Great Generals"}
+	]
+},
+{
+	"name": "Railroad",
+	"terrainsCanBeBuiltOn": ["Land"],
+	"turnsToBuild": 4,
+	"techRequired": "Industrialization",
+	"uniques": [
+		"Can be built outside your borders",
+		"Costs [2] gold per turn when in your territory"
+	],
+	"shortcutKey": "R",
+        "civilopediaText": [{"text":"Reduces movement cost to 1/10 if the other tile also has a Railroad"}]
+}
 ]
