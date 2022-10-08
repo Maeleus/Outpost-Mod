@@ -3,33 +3,38 @@
 	"name": "Archery",
 	"movementType": "Land",
 	"uniques": [
-		"[+1] Sight <in [Watchtower] tiles>",
-		"[+1] Range <in [Watchtower] tiles>",
-		"[+1] Sight <in [Castrum] tiles>",
-		"[+1] Range <in [Castrum] tiles>",
-		"[+1] Sight <in [Medieval Castle] tiles>",
-		"[+1] Range <in [Medieval Castle] tiles>"
+		"[+25]% Strength <in [Outpost] tiles> <when defending> <before discovering [Metal Casting]>",
+		"[+1] Sight <in [Outpost] tiles>",
+		"[+50]% Strength <in [Outpost] tiles> <when defending> <after discovering [Metal Casting]>",
+		"[+1] Sight <in [Outpost] tiles> <after discovering [Astronomy]>"
 	]
 },
 {
 	"name": "Armored",
 	"movementType": "Land",
 	"uniques": [
-		"[+125]% Strength <in [Army Base] tiles> <when defending>",
-		"[+4] Sight <in [Army Base] tiles>",
-		"[+3] Movement <in [Army Base] tiles>"
+		"[+100]% Strength <in [Outpost] tiles> <when defending> <before discovering [Replaceable Parts]>",
+		"[+2] Sight <in [Outpost] tiles>",
+		"[+3] Movement <in [Outpost] tiles>",
+		"[+125]% Strength <in [Outpost] tiles> <when defending> <after discovering [Replaceable Parts]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Replaceable Parts]>",
+		"[+4] Sight <in [Outpost] tiles> <after discovering [Radar]>"
 	]
 },
 {
+
 	"name": "Gunpowder",
 	"movementType": "Land",
 	"uniques": [
-		"[+1] Sight <in [Bastion Fort] tiles>",
-		"[+1] Movement <in [Bastion Fort] tiles>",
-		"[+2] Sight <in [Cavalry Fort] tiles>",
-		"[+2] Movement <in [Cavalry Fort] tiles>",
-		"[+4] Sight <in [Army Base] tiles>",
-		"[+3] Movement <in [Army Base] tiles>"
+		"[+75]% Strength <in [Outpost] tiles> <when defending> <before discovering [Military Science]>",
+		"[+2] Sight <in [Outpost] tiles>",
+		"[+2] Movement <in [Outpost] tiles>",
+		"[+1] Sight <in [Outpost] tiles> <after discovering [Astronomy]>",
+		"[+100]% Strength <in [Outpost] tiles> <when defending> <after discovering [Military Science]> <before discovering [Replaceable Parts]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Military Science]>",
+		"[+125]% Strength <in [Outpost] tiles> <when defending> <after discovering [Replaceable Parts]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Replaceable Parts]>",
+		"[+4] Sight <in [Outpost] tiles> <after discovering [Radar]>"
 	]
 },
 {
@@ -39,54 +44,75 @@
 		"Ignores Zone of Control",
 		"Can pass through impassable tiles",
 		"Unable to capture cities",
-		"[+4] Sight <in [Army Base] tiles>",
-		"[+4] Movement <in [Army Base] tiles>"
+		"[+4] Sight <in [Outpost] tiles>",
+		"[+4] Movement <in [Outpost] tiles>"
 	]
 },
 {
 	"name": "Mounted",
 	"movementType": "Land",
 	"uniques": [
-		"[+50]% Strength <in [Medieval Castle] tiles> <when defending>",
-		"[+1] Sight <in [Medieval Castle] tiles>",
-		"[+1] Movement <in [Medieval Castle] tiles>",
-		"[+75]% Strength <in [Bastion Fort] tiles> <when defending>",
-		"[+1] Sight <in [Bastion Fort] tiles>",
-		"[+1] Movement <in [Bastion Fort] tiles>",
-		"[+100]% Strength <in [Medieval Castle] tiles> <when defending>",
-		"[+2] Sight <in [Cavalry Fort] tiles>",
-		"[+2] Movement <in [Cavalry Fort] tiles>"
+		"[+50]% Strength <in [Outpost] tiles> <when defending> <after discovering [Metal Casting]>",
+		"[+1] Sight <after discovering [Astronomy]>",
+		"[+2] Movement <in [Outpost] tiles> <after discovering [Metal Casting]>",
+		"[+75]% Strength <in [Outpost] tiles> <when defending> <after discovering [Gunpowder]> <before discovering [Military Science]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Gunpowder]>",
+		"[+100]% Strength <in [Outpost] tiles> <when defending> <after discovering [Military Science]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Military Science]>"
 	]
 },
 {
 	"name": "Ranged Gunpowder",
 	"movementType": "Land",
 	"uniques": [
-		"[+1] Sight <in [Medieval Castle] tiles>",
-		"[+1] Range <in [Medieval Castle] tiles>",
-		"[+2] Sight <in [Bastion Fort] tiles>",
-		"[+1] Range <in [Bastion Fort] tiles>",
-		"[+1] additional attacks per turn <in [Bastion Fort] tiles>",
-		"[+2] Sight <in [Artillery Fort] tiles>",
-		"[+2] Range <in [Artillery Fort] tiles>",
-		"[+2] additional attacks per turn <in [Artillery Fort] tiles>",
-		"[+1] Movement <in [Artillery Fort] tiles>",
-		"[+3] Sight <in [Pill Box] tiles>",
-		"[+3] Range <in [Pill Box] tiles>",
-		"[+3] additional attacks per turn <in [Pill Box] tiles>",
-		"[+2] Movement <in [Pill Box] tiles>"
+		"[+75]% Strength <in [Outpost] tiles> <when defending> <before discovering [Military Science]>",
+		"[+2] Sight <in [Outpost] tiles>",
+		"[+1] Range <in [Outpost] tiles>",
+		"[+1] Sight <in [Outpost] tiles> <after discovering [Astronomy]>",
+		"[+1] additional attacks per turn <in [Outpost] tiles>",
+		"[+100]% Strength <in [Outpost] tiles> <when defending> <after discovering [Military Science]> <before discovering [Replaceable Parts]>",
+		"[+1] Range <in [Outpost] tiles> <after discovering [Military Science]>",
+		"[+1] additional attacks per turn <in [Outpost] tiles> <after discovering [Military Science]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Military Science]>",
+		"[+125]% Strength <in [Outpost] tiles> <when defending> <after discovering [Replaceable Parts]>",
+		"[+1] Range <in [Outpost] tiles> <after discovering [Replaceable Parts]>",
+		"[+1] additional attacks per turn <in [Outpost] tiles> <after discovering [Replaceable Parts]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Replaceable Parts]>",
+		"[+4] Sight <in [Outpost] tiles> <after discovering [Radar]>"
 	]
 },
 {
 	"name": "Sword",
 	"movementType": "Land"
 	"uniques": [
-		"[+1] Sight <in [Castrum] tiles>",
-		"[+1] Movement <in [Castrum] tiles>",
-		"[+1] Sight <in [Medieval Castle] tiles>",
-		"[+1] Movement <in [Medieval Castle] tiles>",
-		"[+1] Sight <in [Bastion Fort] tiles>",
-		"[+1] Movement <in [Bastion Fort] tiles>"
+		"[+25]% Strength <in [Outpost] tiles> <when defending> <before discovering [Metal Casting]>",
+		"[+1] Sight <in [Outpost] tiles>",
+		"[+1] Movement <in [Outpost] tiles>",
+		"[+50]% Strength <in [Outpost] tiles> <when defending> <after discovering [Metal Casting]>",
+		"[+1] Movement <in [Outpost] tiles> <after discovering [Metal Casting]>",
+		"[+1] Sight <in [Outpost] tiles> <after discovering [Astronomy]>"
+	]
+},
+{
+	"name": "Armored Water",
+	"movementType": "Water"
+},
+{
+	"name": "Missile",
+	"movementType": "Air",
+	"uniques": [
+		"Self-destructs when attacking"
+	]
+},
+{
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": [
+		"Aircraft",
+		"[+4] Sight",
+		"Can see over obstacles",
+		"Can perform Air Sweep",
+		"Cannot intercept [Missile] units"
 	]
 }
 ]
