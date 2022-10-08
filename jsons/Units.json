@@ -1,5 +1,5 @@
 [
-/*Classical Era */
+/* Sword, Gunpowder Units */
 {
 	"name": "Legion",
 	"unitType": "Sword",
@@ -11,13 +11,95 @@
 	"hurryCostModifier": 20,
 	"requiredTech": "Iron Working",
 	"upgradesTo": "Longswordsman",
+	"obsoleteTech": "Steel",
 	"uniques": [
 		"Can build [Road] improvements on tiles",
-		"Can build [Castrum] improvements on tiles",
+		"Can build [Outpost] improvements on tiles",
 		"Consumes [1] [Iron]"
 	],
 	"attackSound": "metalhit"
 },
+{
+	"name": "Marine",
+	"unitType": "Gunpowder",
+	"movement": 2,
+	"strength": 75,
+	"cost": 400,
+	"requiredTech": "Pharmaceuticals",
+	"promotions": ["Amphibious"],
+	"uniques": [
+		"Normal vision when embarked",
+		"Defense bonus when embarked",
+		"[+10]% Strength <after discovering [Mobile Tactics]>",
+		"Can see invisible [Paratrooper] units"
+	],
+	"attackSound": "machinegun"
+},
+{
+	"name": "Paratrooper",
+	"unitType": "Gunpowder",
+	"movement": 3,
+	"strength": 75,
+	"cost": 400,
+	"requiredTech": "Radar",
+	"uniques": [
+		"Consumes [1] [Aluminum]",
+		"May Paradrop up to [5] tiles from inside friendly territory",
+		"[+10]% Strength <after discovering [Mobile Tactics]>",
+		"No movement cost to pillage",
+		"Invisible to non-adjacent units",
+		"Can see invisible [Paratrooper] units",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>"
+		"Never appears as a Barbarian unit"
+	],
+	"attackSound": "machinegun"
+},
+/* Anti-Air Units */
+{
+	"name": "Anti-Aircraft Gun",
+	"unitType": "Gunpowder",
+	"movement": 2,
+	"interceptRange": 3,
+	"strength": 50,
+	"cost": 375,
+	"requiredTech": "Ballistics",
+	"upgradesTo": "Mobile SAM",
+	"obsoleteTech": "Rocketry",
+	"uniques": [
+		"Can only attack [Helicopter] units",
+		"[100]% chance to intercept air attacks",
+		"[+150]% Strength <vs [Air] units>",
+		"[+150]% Strength <vs [Helicopter] units>",
+		"Never appears as a Barbarian unit",
+		"Cannot intercept [Missile] units",
+		"[1] extra interceptions may be made per turn <in [Outpost] tiles>"
+	],
+	"attackSound": "machinegun"
+},
+{
+	"name": "Mobile SAM",
+	"unitType": "Gunpowder",
+	"movement": 3,
+	"interceptRange": 4,
+	"strength": 65,
+	"rangedStrength": 65,
+	"range": 4,
+	"cost": 425,
+	"requiredTech": "Rocketry",
+	"uniques": [
+		"Can only attack [Helicopter] units",
+		"[100]% chance to intercept air attacks",
+		"[+150]% Strength <vs [Air] units>",
+		"[+150]% Strength <vs [Helicopter] units>",
+		"[+15]% Strength <after discovering [Stealth]>",
+		"Cannot intercept [Missile] units <before discovering [Advanced Ballistics]>",
+		"[+100]% Damage when intercepting <after discovering [Stealth]>",
+		"[2] extra interceptions may be made per turn <in [Outpost] tiles>",
+		"Never appears as a Barbarian unit"
+	],
+	"attackSound": "missile"
+},
+/* Archery, Siege, Ranged Gunpowder Units */
 {
 	"name": "Catapult",
 	"unitType": "Siege",
@@ -30,6 +112,7 @@
 	"upgradesTo": "Trebuchet",
 	"uniques": [
 		"[+200]% Strength <vs cities> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"[-10]% Strength <when defending>",
 		"No defensive terrain bonus",
 		"Must set up to ranged attack",
@@ -53,6 +136,7 @@
 	"upgradesTo": "Trebuchet",
 	"uniques": [
 		"[+200]% Strength <vs cities> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"[-10]% Strength <when defending>",
 		"No defensive terrain bonus",
 		"Must set up to ranged attack",
@@ -86,8 +170,7 @@
 	"strength": 14,
 	"rangedStrength": 14,
 	"cost": 120,
-	"requiredTech":
-	"Machinery",
+	"requiredTech": "Machinery",
 	"upgradesTo": "Field Cannon",
 	"promotions": ["Logistics"],
 	"obsoleteTech": "Chemistry",
@@ -122,8 +205,7 @@
 	"upgradesTo": "Siege Cannon",
 	"uniques": [
 		"[+200]% Strength <vs cities> <when attacking>",
-		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"[-15]% Strength <when defending>",
 		"No defensive terrain bonus",
 		"Must set up to ranged attack",
@@ -145,8 +227,7 @@
 	"requiredTech": "Physics",
 	"upgradesTo": "Siege Cannon",
 	"uniques": [
-		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"[-50]% Strength <when defending>",
 		"No defensive terrain bonus",
 		"Must set up to ranged attack"
@@ -156,7 +237,7 @@
 },
 /* Renaisance Era */
 {
-	"name": "Field Cannon", /* Should be prerequisite for Frigate */
+	"name": "Field Cannon",
 	"unitType": "Ranged Gunpowder",
 	"range": 2,
 	"movement": 2,
@@ -165,9 +246,7 @@
 	"cost": 185,
 	"requiredTech": "Chemistry",
 	"upgradesTo": "Field Artillery",
-	"uniques": [
-		"[-25]% Strength <when defending>"
-	],
+	"uniques": ["[-25]% Strength <when defending>"],
 	"obsoleteTech": "Industrialization",
 	"attackSound": "cannon"
 },
@@ -180,18 +259,16 @@
 	"rangedStrength": 20,
 	"cost": 185,
 	"requiredTech": "Chemistry",
-	"upgradesTo": "Siege Artillery",
+	"upgradesTo": "Siege Mortar",
 	"uniques": [
 		"[+200]% Strength <vs cities> <when attacking>",
-		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"No defensive terrain bonus",
 		"Must set up to ranged attack",
 		"[-1] Sight",
 		"[-25]% Strength <when defending>"
 	],
-	"obsoleteTech": "Dynamite",
+	"obsoleteTech": "Industrialization",
 	"attackSound": "cannon"
 },
 /* Industrial Era */
@@ -203,7 +280,7 @@
 	"strength": 32,
 	"rangedStrength": 32,
 	"cost": 225,
-	"requiredTech": "Industrialization",
+	"requiredTech": "Rifling",
 	"upgradesTo": "Howitzer",
 	"uniques": [
 		"[-25]% Strength <when defending>"
@@ -221,7 +298,7 @@
 	"strength": 30,
 	"rangedStrength": 30,
 	"cost": 225,
-	"requiredTech": "Industrialization",
+	"requiredTech": "Rifling",
 	"upgradesTo": "Howitzer",
 	"uniques": [
 		"[+1] additional attacks per turn",
@@ -229,6 +306,28 @@
 	],
 	"obsoleteTech": "Dynamite",
 	"attackSound": "cannon"
+},
+{
+	"name": "Siege Mortar",
+	"unitType": "Siege",
+	"range": 2,
+	"movement": 2,
+	"strength": 25,
+	"rangedStrength": 25,
+	"cost": 320,
+	"requiredTech": "Industrialization",
+	"upgradesTo": "Siege Artillery",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"[+200]% Strength <vs cities> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight",
+		"[-25]% Strength <when defending>"
+	],
+	"obsoleteTech": "Dynamite",
+	"attackSound": "artillery"
 },
 {
 	"name": "Howitzer",
@@ -242,9 +341,9 @@
 	"upgradesTo": "Rocket Artillery",
 	"uniques": [
 		"Ranged attacks may be performed over obstacles",
-		"[-25]% Strength <when defending>"
+		"[-25]% Strength <when defending>",
+		"[+20]% Strength <when attacking> <after discovering [Combined Arms]>"
 	],
-	"obsoleteTech": "Rocketry",
 	"attackSound": "artillery"
 },
 {
@@ -256,14 +355,11 @@
 	"rangedStrength": 30,
 	"cost": 320,
 	"requiredTech": "Dynamite",
-	"upgradesTo": "Siege Mortar",
+	"upgradesTo": "Heavy Artillery",
 	"promotions": ["Indirect Fire"],
 	"uniques": [
 		"[+200]% Strength <vs cities> <when attacking>",
-		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Bastion Fort] tiles> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"No defensive terrain bonus",
 		"Must set up to ranged attack",
 		"[-1] Sight",
@@ -274,26 +370,20 @@
 },
 /* Modern Era */
 {
-	"name": "Siege Mortar",
+	"name": "Heavy Artillery",
 	"unitType": "Siege",
 	"range": 4,
-	"movement": 2,
+	"movement": 1,
 	"strength": 50,
-.	"rangedStrength": 50,
+	"rangedStrength": 50,
 	"cost": 390,
 	"requiredTech": "Ballistics",
 	"upgradesTo": "Rocket Artillery",
 	"promotions": ["Indirect Fire"],
 	"uniques": [
-		"Rough terrain penalty",
 		"Consumes [1] [Oil]",
 		"[+200]% Strength <vs cities> <when attacking>",
-		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Bastion Fort] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Artillery Fort] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Cavalry Fort] tiles> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"No defensive terrain bonus",
 		"Must set up to ranged attack",
 		"[-1] Sight",
@@ -306,7 +396,7 @@
 {
 	"name": "Rocket Artillery",
 	"unitType": "Siege",
-	"range": 3,
+	"range": 4,
 	"movement": 3,
 	"strength": 60,
 	"rangedStrength": 60,
@@ -315,16 +405,9 @@
 	"promotions": ["Indirect Fire"],
 	"uniques": [
 		"Consumes [1] [Aluminum]",
-		"Can carry [1] [Missile] units",
+		"Can carry [2] [Missile] units",
 		"[+200]% Strength <vs cities> <when attacking>",
-		"[+100]% Strength <when fighting in [Watchtower] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Castrum] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Medieval Castle] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Bastion Fort] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Artillery Fort] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Cavalry Fort] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Army Base] tiles> <when attacking>",
-		"[+100]% Strength <when fighting in [Pill Box] tiles> <when attacking>",
+		"[+200]% Strength <when fighting in [Outpost] tiles> <when attacking>",
 		"[-25]% Strength <when defending>"
 	],
 	"attackSound": "missile"
@@ -349,6 +432,706 @@
 	],
 	"attackSound": "nuke"
 }
+/* Naval Units */
+/* Ancient + Classical Eras */
+{
+	"name": "Trireme",
+	"unitType": "Melee Water",
+	"movement": 2,
+	"strength": 10,
+	"cost": 45,
+	"requiredTech": "Sailing",
+	"uniques": [
+		"Cannot enter ocean tiles",
+		"Never appears as a Barbarian unit",
+		"May capture killed [Water] units"
+	],
+	"upgradesTo": "Cog",
+	"obsoleteTech": "Compass",
+	"attackSound": "nonmetalhit"
+},
+{
+	"name": "Quinquereme",
+	"unitType": "Melee Water",
+	"uniqueTo": "Carthage",
+	"replaces": "Trireme",
+	"movement": 2,
+	"strength": 13,
+	"cost": 45,
+	"requiredTech": "Sailing",
+	"uniques": [
+		"Cannot enter ocean tiles",
+		"May capture killed [Water] units"
+	],
+	"upgradesTo": "Cog",
+	"obsoleteTech": "Compass",
+	"attackSound": "nonmetalhit"
+},
+{
+	"name": "Dromon",
+	"unitType": "Ranged Water",
+	"uniqueTo": "Byzantium",
+	"replaces": "Trireme",
+	"movement": 2,
+	"strength": 10,
+	"rangedStrength": 10,
+	"cost": 56,
+	"requiredTech": "Sailing",
+	"uniques": [
+		"Cannot enter ocean tiles",
+		"[+50]% Strength <vs [Water] units>"
+	],
+	"upgradesTo": "Galleass",
+	"obsoleteTech": "Astronomy",
+	"attackSound": "arrow"
+},
+/* Medieval Era */
+{
+	"name": "Cog",
+	"unitType": "Melee Water",
+	"movement": 3,
+	"strength": 15,
+	"cost": 75,
+	"requiredTech": "Compass",
+	"obsoleteTech": "Navigation",
+	"upgradesTo": "Privateer",
+	"uniques": [
+		"Cannot enter ocean tiles",
+		"May capture killed [Water] units",
+		"[+15]% Strength <vs [Melee Water] units> <when defending>"
+	],
+	"attackSound": "nonmetalhit"
+},
+{
+	"name": "Longship",
+	"unitType": "Melee Water",
+	"uniqueTo": "Denmark",
+	"replaces": "Cog",
+	"movement": 3,
+	"strength": 20,
+	"cost": 60,
+	"requiredTech": "Compass",
+	"obsoleteTech": "Navigation",
+	"upgradesTo": "Privateer",
+	"promotions": [	
+		"Coastal Raider I",
+		"Coastal Raider II",
+		"Supply"
+	],
+	"uniques": [
+		"[+25]% Strength <vs [Land] units>"
+	],
+	"attackSound": "nonmetalhit"
+},
+{
+	"name": "Galleass",
+	"unitType": "Ranged Water",
+	"movement": 3,
+	"strength": 17,
+	"rangedStrength": 17,
+	"cost": 100,
+	"requiredTech": "Compass",
+	"obsoleteTech": "Navigation",
+	"upgradesTo": "Frigate",
+	"uniques": ["Cannot enter ocean tiles"],
+	"attackSound": "arrow"
+},
+/* Renaissance */
+{
+	"name": "Caravel",
+	"unitType": "Ranged Water",
+	"movement": 4,
+	"strength": 20,
+	"rangedStrength": 20,
+	"range": 2,
+	"cost": 120,
+	"requiredTech": "Astronomy",
+	"upgradesTo": "Ironclad",
+	"obsoleteTech": "Combustion",
+	"uniques": [
+		"[+1] Sight",
+		"[+20]% Strength <when attacking> <after discovering [Chemistry]>"
+	],
+	"hurryCostModifier": 30,
+	"attackSound": "cannon"
+},
+{
+	"name": "Turtle Ship",
+	"unitType": "Ranged Water",
+	"replaces": "Caravel",
+	"uniqueTo": "Korea",
+	"movement": 4,
+	"strength": 20,
+	"rangedStrength": 20,
+	"range": 2,
+	"cost": 120,
+	"requiredTech": "Astronomy",
+	"upgradesTo": "Ironclad",
+	"obsoleteTech": "Combustion",
+	"uniques": [
+		"[+80]% Strength <when defending>",
+		"[+20]% Strength <when attacking> <after discovering [Chemistry]>"
+	],
+	"hurryCostModifier": 30,
+	"attackSound": "cannon"
+},
+{
+	"name": "Privateer",
+	"unitType": "Melee Water",
+	"movement": 5,
+	"strength": 25,
+	"cost": 150,
+	"requiredTech": "Navigation",
+	"obsoleteTech": "Steam Power",
+	"upgradesTo": "Armored Cruiser",
+	"promotions": [
+		"Coastal Raider I"
+	],
+	"uniques": [
+		"May capture killed [Water] units",
+		"[+25]% Strength <vs [Melee Water] units> <when defending>"
+	],
+	"attackSound": "cannon"
+},
+{
+	"name": "Sea Beggar",
+	"unitType": "Melee Water",
+	"replaces": "Privateer",
+	"uniqueTo": "The Netherlands",
+	"movement": 5,
+	"strength": 25,
+	"cost": 150,
+	"requiredTech": "Navigation",
+	"obsoleteTech": "Steam Power",
+	"upgradesTo": "Armored Cruiser",
+	"promotions": [
+		"Coastal Raider I",
+		"Coastal Raider II",
+		"Supply"
+	],
+	"uniques": [
+		"May capture killed [Water] units",
+		"[+25]% Strength <vs [Melee Water] units> <when defending>"
+	],
+	"attackSound": "cannon"
+},
+{
+	"name": "Frigate",
+	"unitType": "Ranged Water",
+	"movement": 5,
+	"strength": 30,
+	"rangedStrength": 30,
+	"cost": 185,
+	"requiredResource": "Iron",
+	"requiredTech": "Navigation",
+	"obsoleteTech": "Steam Power",
+	"upgradesTo": "Dreadnought",
+	"uniques": [
+		"[-15]% Strength <when defending>"
+		"[+30]% Strength <after discovering [Industrialization]>"
+	],
+	"hurryCostModifier": 20,
+	"attackSound": "cannon"
+},
+{
+	"name": "Ship of the Line",
+	"unitType": "Ranged Water",
+	"replaces": "Frigate",
+	"uniqueTo": "England",
+	"movement": 5,
+	"strength": 35,
+	"rangedStrength": 35,
+	"cost": 185,
+	"requiredResource": "Iron",
+	"uniques": [
+		"[+1] Sight",
+		"[-15]% Strength <when defending>"
+		"[+30]% Strength <after discovering [Industrialization]>"
+	],
+	"requiredTech": "Navigation",
+	"obsoleteTech": "Steam Power",
+	"upgradesTo": "Dreadnought",
+	"hurryCostModifier": 20,
+	"attackSound": "cannon"
+},
+/* Industrial Era */
+{
+	"name": "Ironclad",
+	"unitType": "Armored Water",
+	"movement": 4,
+	"strength": 30,
+	"rangedStrength": 30,
+	"range": 2,
+	"cost": 200,
+	"requiredTech": "Steam Power",
+	"upgradesTo": "Destroyer",
+	"obsoleteTech": "Combustion",
+	"uniques": [
+		"[+50]% Strength <when fighting in [Friendly Land] tiles>",
+		"Double movement in [Coast]"
+	],
+	"attackSound": "shipguns"
+},
+{
+	"name": "Armored Cruiser",
+	"unitType": "Armored Water",
+	"movement": 6,
+	"strength": 40,
+	"rangedStrength": 40,
+	"range": 2,
+	"cost": 250,
+	"requiredTech": "Steam Power",
+	"requiredResource": "Coal",
+	"upgradesTo": "Cruiser",
+	"obsoleteTech": "Combustion",
+	"promotions": ["Armor Plating I"],
+	"uniques": [
+		"[+15]% Strength <vs cities>",
+		"[+15]% Strength <when fighting in [Outpost] tiles> <when attacking>"
+	],
+	"attackSound": "shipguns"
+},
+{
+	"name": "Dreadnought",
+	"unitType": "Armored Water",
+	"movement": 5,
+	"strength": 45,
+	"rangedStrength": 45,
+	"range": 2,
+	"cost": 300,
+	"requiredTech": "Steam Power",
+	"requiredResource": "Coal",
+	"upgradesTo": "Battleship",
+	"obsoleteTech": "Electronics",
+	"promotions": ["Armor Plating I"],
+	"uniques": [
+		"[+15]% Strength <vs [Water] units> <when attacking>",
+	],
+	"attackSound": "shipguns"
+},
+/* Modern Era */
+{
+	"name": "Submarine",
+	"unitType": "Submarine",
+	"movement": 5,
+	"strength": 60,
+	"rangedStrength": 60,
+	"cost": 325,
+	"requiredTech": "Refrigeration",
+	"upgradesTo": "Nuclear Submarine",
+	"uniques": [
+		"[+75]% Strength <when attacking>",
+		"[-40]% Strength <when defending>",
+		"Can only attack [Water] tiles",
+		"Never appears as a Barbarian unit"
+	],
+	"attackSound": "torpedo"
+},
+{
+	"name": "Carrier",
+	"unitType": "Aircraft Carrier",
+	"movement": 5,
+	"strength": 40,
+	"cost": 375,
+	"requiredResource": "Oil",
+	"requiredTech": "Electronics",
+	"obsoleteTech": "Advanced Ballistics",
+	"upgradesTo": "Nuclear Carrier",
+	"uniques": [
+		"Cannot attack",
+		"Can carry [2] [Aircraft] units",
+		"Can carry [1] extra [Aircraft] units <after discovering [Radar]>"
+	]
+},
+{
+	"name": "Destroyer",
+	"unitType": "Armored Water",
+	"movement": 7,
+	"strength": 45,
+	"rangedStrength": 45,
+	"range": 2,
+	"interceptRange": 2,
+	"cost": 325,
+	"requiredTech": "Combustion",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"Can see invisible [Submarine] units",
+		"[+50]% chance to intercept air attacks",
+		"[+50]% chance to intercept air attacks <after discovering [Radar]>",
+		"[1] extra interceptions may be made per turn <after discovering [Radar]>",
+		"[+100]% Strength <vs [Submarine] units>",
+		"[+100]% Strength <vs [Air] units>",
+		"[+20]% Strength <after discovering [Robotics]>",
+		"Can carry [2] [Missile] units <after discovering [Advanced Ballistics]>",
+		"Cannot intercept [Missile] units <before discovering [Advanced Ballistics]>",
+		"[+100]% Damage when intercepting <after discovering [Stealth]>",
+	],
+	"attackSound": "shipguns"
+},
+{
+	"name": "Cruiser",
+	"unitType": "Armored Water",
+	"movement": 6,
+	"strength": 50,
+	"rangedStrength": 50,
+	"range": 3,
+	"interceptRange": 3,
+	"cost": 350,
+	"requiredResource": "Oil",
+	"requiredTech": "Combustion",
+	"obsoleteTech": "Robotics",
+	"upgradesTo": "Missile Cruiser",
+	"promotions": [
+		"Indirect Fire",
+		"Armor Plating I"
+	],
+	"uniques": [
+		"[+50]% chance to intercept air attacks",
+		"[+50]% chance to intercept air attacks <after discovering [Radar]>",
+		"[1] extra interceptions may be made per turn <after discovering [Radar]>",
+		"[+15]% Strength <vs cities>",
+		"[+15]% Strength <when fighting in [Outpost] tiles> <when attacking>"
+		"[+150]% Strength <vs [Air] units>",
+		"Cannot intercept [Missile] units"
+	],
+	"attackSound": "shipguns"
+},
+{
+	"name": "Battleship",
+	"unitType": "Armored Water",
+	"movement": 5,
+	"strength": 60,
+	"rangedStrength": 60,
+	"range": 3,
+	"cost": 450,
+	"requiredTech": "Electronics",
+	"uniques": [
+		"Consumes [2] [Oil]",
+		"Never appears as a Barbarian unit",
+		"[+20]% Strength <vs [Water] units> <when attacking>",
+		"Can carry [2] [Missile] units <after discovering [Advanced Ballistics]>",
+	],
+	"promotions": [
+		"Indirect Fire",
+		"Armor Plating I"
+	],
+	"attackSound": "shipguns"
+},
+/* Atomic Era */
+{
+	"name": "Nuclear Submarine",
+	"unitType": "Submarine",
+	"movement": 6,
+	"strength": 85,
+	"range": 3,
+	"rangedStrength": 85,
+	"cost": 425,
+	"requiredTech": "Telecommunications",
+	"requiredResource": "Uranium",
+	"uniques": [
+		"[+75]% Strength <when attacking>",
+		"[-40]% Strength <when defending>",
+		"Can only attack [Water] tiles",
+		"[+1] Sight",
+		"Can carry [2] [Missile] units",
+		"Never appears as a Barbarian unit"
+	],
+	"attackSound": "torpedo"
+},
+{
+	"name": "Nuclear Carrier",
+	"unitType": "Aircraft Carrier",
+	"movement": 6,
+	"strength": 50,
+	"cost": 600,
+	"requiredResource": "Uranium",
+	"requiredTech": "Advanced Ballistics",
+	"uniques": [
+		"Cannot attack",
+		"Can carry [4] [Aircraft] units",
+		"[+100]% Strength <vs [Air] units> <after discovering [Stealth]>",
+		"Never appears as a Barbarian unit"
+	]
+},
+{
+	"name": "Missile Cruiser",
+	"unitType": "Armored Water",
+	"movement": 7,
+	"strength": 70,
+	"rangedStrength": 70,
+	"range": 4,
+	"interceptRange": 4,
+	"cost": 425, /* 425 */
+	"requiredResource": "Aluminum",
+	"requiredTech": "Robotics",
+	"uniques": [
+		"[-15]% Strength <when defending>",
+		"[100]% chance to intercept air attacks",
+		"[+150]% Strength <vs [Air] units>",
+		"[+200]% Damage when intercepting <after discovering [Stealth]>",
+		"[2] extra interceptions may be made per turn",
+		"Can carry [4] [Missile] units",
+		"Never appears as a Barbarian unit"
+	],
+	"promotions": ["Indirect Fire"],
+	"attackSound": "missile"
+}
+/* Missile Units */
+{
+	"name": "Guided Missile",
+	"unitType": "Missile",
+	"movement": 1,
+	"strength": 40,
+	"rangedStrength": 40,
+	"range": 7,
+	"cost": 150,
+	"requiredTech": "Rocketry",
+	"uniques": [
+		"[-100]% maintenance costs",
+		"[+50]% Strength <after discovering [Advanced Ballistics]>",
+		"[+1] Range <after discovering [Advanced Ballistics]>"
+	],
+	"attackSound": "missile"
+},
+{
+	"name": "Hypersonic Missile",
+	"unitType": "Missile",
+	"movement": 1,
+	"strength": 80,
+	"rangedStrength": 80,
+	"range": 10,
+	"cost": 300,
+	"requiredTech": "Nanotechnology",
+	"requiredResource": "Iron",
+	"uniques": [
+		"Damage taken from interception reduced by [+75]%"
+		"[+50]% Strength <after discovering [Stealth]>",
+		"[+2] Range <after discovering [Stealth]>"
+	],
+	"attackSound": "missile"
+},
+{
+	"name": "Nuclear Missile",
+	"unitType": "Missile",
+	"movement": 1,
+	"strength": 150,
+	"rangedStrength": 150,
+	"range": 12,
+	"cost": 1000,
+	"requiredTech": "Advanced Ballistics",
+	"uniques": [
+		"Nuclear weapon of Strength [2]",
+		"Only available <if [Manhattan Project] is constructed>",
+		"Blast radius [2]",
+		"Consumes [2] [Uranium]",
+		"[+50]% Strength <after discovering [Nanotechnology]>",
+		"[+3] Range <after discovering [Nanotechnology]>"
+	],
+	"attackSound": "nuke"
+},
+/* Fighter Units */
+{
+	"name": "Triplane",
+	"unitType": "Fighter",
+	"movement": 1,
+	"strength": 35,
+	"rangedStrength": 35,
+	"range": 5,
+	"interceptRange": 5,
+	"cost": 325,
+	"requiredTech": "Flight",
+	"requiredResource": "Oil",
+	"upgradesTo": "Fighter",
+	"obsoleteTech": "Radar",
+	"uniques": [
+		"[50]% chance to intercept air attacks",
+		"[+150]% Strength <vs [Bomber] units>"
+	],
+	"attackSound": "machinegun"
+	},
+{
+	"name": "Fighter",
+	"unitType": "Fighter",
+	"movement": 1,
+	"strength": 45,
+	"rangedStrength": 45,
+	"range": 6,
+	"interceptRange": 6,
+	"cost": 375,
+	"requiredTech": "Radar",
+	"requiredResource": "Oil",
+	"upgradesTo": "3rd Gen Jet Fighter",
+	"obsoleteTech": "Computers",
+	"uniques": [
+		"[100]% chance to intercept air attacks",
+		"[+150]% Strength <vs [Bomber] units>"
+	],
+	"attackSound": "machinegun"
+},
+{
+	"name": "Zero",
+	"unitType": "Fighter",
+	"replaces": "Fighter",
+	"uniqueTo": "Japan",
+	"movement": 1,
+	"strength": 45,
+	"rangedStrength": 45,
+	"range": 6,
+	"interceptRange": 6,
+	"cost": 375,
+	"requiredTech": "Radar",
+	"upgradesTo": "3rd Gen Jet Fighter",
+	"obsoleteTech": "Computers",
+	"uniques": [
+		"[100]% chance to intercept air attacks",
+		"[+150]% Strength <vs [Bomber] units>",
+	],
+	"promotions": ["[Zero] ability"],
+	"attackSound": "machinegun"
+	},
+{
+	"name": "3rd Gen Jet Fighter",
+	"unitType": "Fighter",
+	"movement": 1,
+	"strength": 60,
+	"rangedStrength": 60,
+	"range": 8,
+	"interceptRange": 8,
+	"cost": 400,
+	"requiredTech": "Computers",
+	"requiredResource": "Oil",
+	"upgradesTo": "4th Gen Jet Fighter",
+	"obsoleteTech": "Lasers",
+	"uniques": [
+		"[100]% chance to intercept air attacks",
+		"[+150]% Strength <vs [Bomber] units>",
+		"[+150]% Strength <vs [Helicopter] units>"
+	],
+	"attackSound": "jetgun"
+},
+{
+	"name": "4th Gen Jet Fighter",
+	"unitType": "Fighter",
+	"movement": 1,
+	"strength": 75,
+	"rangedStrength": 75,
+	"range": 10,
+	"interceptRange": 10,
+	"cost": 450,
+	"requiredTech": "Lasers",
+	"requiredResource": "Oil",
+	"upgradesTo": "5th Gen Jet Fighter",
+	"uniques": [
+		"[100]% chance to intercept air attacks",
+		"[+200]% Strength <vs [Bomber] units>",
+		"[+150]% Strength <vs [Helicopter] units>",
+		"Damage taken from interception reduced by [25]%",
+	],
+	"attackSound": "jetgun"
+},
+{
+	"name": "5th Gen Jet Fighter",
+	"unitType": "Fighter",
+	"movement": 1,
+	"strength": 90,
+	"rangedStrength": 90,
+	"range": 12,
+	"interceptRange": 12,
+	"cost": 500,
+	"requiredTech": "Stealth",
+	"requiredResource": "Aluminum",
+	"uniques": [
+		"[100]% chance to intercept air attacks",
+		"[+300]% Strength <vs [Bomber] units>",
+		"[+150]% Strength <vs [Helicopter] units>",
+		"Damage taken from interception reduced by [90]%"
+	],
+	"attackSound": "jetgun"
+},
+/* Bomber Units */
+{
+	"name": "Great War Bomber",
+	"unitType": "Bomber",
+	"movement": 1,
+	"strength": 50,
+	"rangedStrength": 50,
+	"range": 6,
+	"cost": 10, /* 325 */
+	"requiredTech": "Flight",
+	/*"requiredResource": "Oil",*/
+	"upgradesTo": "Bomber",
+	"obsoleteTech": "Radar",
+	"uniques": ["Cannot be carried by [Carrier] units"],
+	"attackSound": "bombing"
+},
+{
+	"name": "Bomber",
+	"unitType": "Bomber",
+	"movement": 1,
+	"strength": 65,
+	"rangedStrength": 65,
+	"range": 10,
+	"cost": 375,
+	"requiredTech": "Radar",
+	"requiredResource": "Oil",
+	"upgradesTo": "Strategic Bomber",
+	"obsoleteTech": "Computers",
+	"uniques": ["Cannot be carried by [Carrier] units"],
+	"attackSound": "bombing"
+},
+{
+	"name": "B17",
+	"unitType": "Bomber",
+	"replaces": "Bomber",
+	"uniqueTo": "America",
+	"movement": 1,
+	"strength": 70,
+	"rangedStrength": 70,
+	"range": 10,
+	"cost": 375,
+	"requiredTech": "Radar",
+	"requiredResource": "Oil",
+	"promotions": ["Evasion", "Siege I"],
+	"upgradesTo": "Strategic Bomber",
+	"obsoleteTech": "Computers",
+	"uniques": ["Cannot be carried by [Carrier] units"],
+	"attackSound": "bombing"
+},
+{
+	"name": "Strategic Bomber",
+	"unitType": "Bomber",
+	"movement": 1,
+	"strength": 75,
+	"rangedStrength": 75,
+	"range": 15,
+	"cost": 400,
+	"requiredTech": "Computers",
+	"requiredResource": "Oil",
+	"upgradesTo": "Stealth Bomber",
+	"uniques": [
+		"Cannot be carried by [Carrier] units",
+		"Damage taken from interception reduced by [25]%",
+	],
+	"attackSound": "bombing"
+},
+{
+	"name": "Stealth Bomber",
+	"unitType": "Bomber",
+	"movement": 2,
+	"strength": 100,
+	"rangedStrength": 100,
+	"range": 20,
+	"cost": 500,
+	"requiredTech": "Stealth",
+	"requiredResource": "Aluminum",
+	"uniques": [
+		"Damage taken from interception reduced by [90]%",
+		"Cannot be carried by [Carrier] units",
+		"[+4] Sight",
+		"Can see over obstacles"
+	],
+	"attackSound": "bombing"
+},
 /* Civilians */
 {
 	"name": "Great General",
@@ -357,14 +1140,11 @@
 	"uniques": [
 		"Can start an [8]-turn golden age",
 		"[+15]% Strength bonus for [Military] units within [2] tiles",
-		"[+20]% Strength bonus for [Military] units within [2] tiles <in [Watchtower] tiles>",
-		"[+25]% Strength bonus for [Military] units within [2] tiles <in [Castrum] tiles>",
-		"[+25]% Strength bonus for [Military] units within [2] tiles <in [Medieval Castle] tiles>",
-		"[+30]% Strength bonus for [Military] units within [2] tiles <in [Bastion Fort] tiles>",
-		"[+35]% Strength bonus for [Military] units within [3] tiles <in [Cavalry Fort] tiles>",
-		"[+35]% Strength bonus for [Military] units within [3] tiles <in [Artillery Fort] tiles>",
-		"[+40]% Strength bonus for [Military] units within [4] tiles <in [Pill Box] tiles>",
-		"[+40]% Strength bonus for [Military] units within [4] tiles <in [Army Base] tiles>",
+		"[+20]% Strength bonus for [Military] units within [2] tiles <in [Outpost] tiles>",
+		"[+25]% Strength bonus for [Military] units within [2] tiles <in [Outpost] tiles> <after discovering [Metal Casting]>",
+		"[+30]% Strength bonus for [Military] units within [3] tiles <in [Outpost] tiles> <after discovering [Gunpowder]>",
+		"[+30]% Strength bonus for [Military] units within [4] tiles <in [Outpost] tiles> <after discovering [Military Science]>",
+		"[+30]% Strength bonus for [Military] units within [5] tiles <in [Outpost] tiles> <after discovering [Replaceable Parts]>",
 		"Great Person - [War]",
 		"Unbuildable",
 		"Uncapturable"
@@ -381,14 +1161,11 @@
 		"All adjacent units heal [+15] HP when healing",
 		"[+15] HP when healing",
 		"[+15]% Strength bonus for [Military] units within [2] tiles",
-		"[+20]% Strength bonus for [Military] units within [2] tiles <in [Watchtower] tiles>",
-		"[+25]% Strength bonus for [Military] units within [2] tiles <in [Castrum] tiles>",
-		"[+25]% Strength bonus for [Military] units within [2] tiles <in [Medieval Castle] tiles>",
-		"[+30]% Strength bonus for [Military] units within [2] tiles <in [Bastion Fort] tiles>",
-		"[+35]% Strength bonus for [Military] units within [3] tiles <in [Cavalry Fort] tiles>",
-		"[+35]% Strength bonus for [Military] units within [3] tiles <in [Artillery Fort] tiles>",
-		"[+40]% Strength bonus for [Military] units within [4] tiles <in [Pill Box] tiles>",
-		"[+40]% Strength bonus for [Military] units within [4] tiles <in [Army Base] tiles>",
+		"[+20]% Strength bonus for [Military] units within [2] tiles <in [Outpost] tiles>",
+		"[+25]% Strength bonus for [Military] units within [2] tiles <in [Outpost] tiles> <after discovering [Metal Casting]>",
+		"[+30]% Strength bonus for [Military] units within [3] tiles <in [Outpost] tiles> <after discovering [Gunpowder]>",
+		"[+30]% Strength bonus for [Military] units within [4] tiles <in [Outpost] tiles> <after discovering [Military Science]>",
+		"[+30]% Strength bonus for [Military] units within [5] tiles <in [Outpost] tiles> <after discovering [Replaceable Parts]>",
 		"Great Person - [War]",
 		"Unbuildable",
 		"Uncapturable"
