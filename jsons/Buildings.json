@@ -1,52 +1,29 @@
 [
 {
-	"name": "Barracks",
-	"hurryCostModifier": 25,
-	"maintenance": 1,
+	"name": "Neuschwanstein",
+	"happiness": 2,
+	"culture": 4,
+	"gold": 6,
+	"greatPersonPoints": {"Great Merchant": 1},
+	"isWonder": true,
 	"uniques": [
-		"Destroyed when the city is captured",
-		"New [Military] units start with [15] Experience [in this city]",
-		"Provides [1] [Outpost Supplies]"
+		"[+1 Happiness, +2 Culture, +3 Gold] from every [Castle]",
+		"Must have an owned [Mountain] within [2] tiles"
 	],
-	"requiredTech": "Bronze Working"
+	"requiredTech": "Dynamite",
+	"quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria"
 },
 {
-	"name": "Krepost",
-	"replaces": "Barracks",
-	"uniqueTo": "Russia",
-	"hurryCostModifier": 25,
-	"maintenance": 1,
+	"name": "Spaceship Factory",
+	"production": 3,
+	"requiredResource": "Aluminum",
+	"cost": 360,
+	"requiredBuilding": "Factory",
 	"uniques": [
-		"[-25]% Culture cost of natural border growth [in this city]",
-		"[-25]% Gold cost of acquiring tiles [in this city]",
-		"New [Military] units start with [15] Experience [in this city]",
-		"Destroyed when the city is captured",
-		"Provides [1] [Outpost Supplies]"
+		"[+50]% Production when constructing [Spaceship part] units [in this city]",
+		"New [Missile] units start with [15] Experience [in this city]",
+		"Destroyed when the city is captured"
 	],
-	"requiredTech": "Bronze Working"
+	"requiredTech": "Robotics"
 },
-{
-	"name": "Armory",
-	"hurryCostModifier": 25,
-	"maintenance": 1,
-	"requiredBuilding": "Barracks",
-	"uniques": [
-		"New [Military] units start with [15] Experience [in this city]",
-		"Destroyed when the city is captured",
-		"Provides [2] [Outpost Supplies]"
-	],
-	"requiredTech": "Steel"
-},
-{
-	"name": "Military Academy",
-	"hurryCostModifier": 0,
-	"maintenance": 1,
-	"requiredBuilding": "Armory",
-	"uniques": [
-		"New [Military] units start with [15] Experience [in this city]",
-		"Destroyed when the city is captured",
-		"Provides [3] [Outpost Supplies]"
-	],
-	"requiredTech": "Military Science"
-}
 ]
