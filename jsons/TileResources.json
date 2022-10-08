@@ -1,6 +1,83 @@
 [
+/* Strategic Resources */
 {
-	"name": "Outpost Supplies",
-	"resourceType": "Strategic"
+	"name": "Coal",
+	"resourceType": "Strategic",
+	"revealedBy": "Industrialization",
+	"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh"],
+	"production": 1,
+	"improvement": "Mine",
+	"improvementStats": {"production": 1},
+	"uniques": [
+		"Generated with weight [35] <in [Hill] tiles>",
+		"Generated with weight [30] <in [Jungle] tiles> <in tiles without [Hill]>",
+		"Generated with weight [30] <in [Forest] tiles> <in tiles without [Hill]>",
+		"Minor deposits generated with weight [10] <in [Marsh] tiles> <in tiles without [Hill]>",
+		"Minor deposits generated with weight [10] <in [Jungle] tiles>",
+		"Minor deposits generated with weight [10] <in [Forest] tiles>",
+		"Minor deposits generated with weight [20] <in [Grassland] [Hill] tiles>",
+		"Minor deposits generated with weight [20] <in [Plains] [Hill] tiles>",
+		"Minor deposits generated with weight [30] <in [Desert] [Hill] tiles>",
+		"Minor deposits generated with weight [30] <in [Tundra] [Hill] tiles>",
+		"Minor deposits generated with weight [30] <in [Snow] [Hill] tiles>"
+	],
+	"majorDepositAmount": {"sparse": 8, "default": 12, "abundant": 16}, /* 5, 7, 10 */
+	"minorDepositAmount": {"sparse": 4, "default": 6, "abundant": 8} /* 2, 3, 3 */
+},
+{
+	"name": "Oil",
+	"resourceType": "Strategic",
+	"revealedBy": "Biology",
+	"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle"],
+	"production": 1,
+	"improvedBy": ["Oil well", "Offshore Platform"],
+	"improvementStats": {"production": 3},
+	"uniques": [
+		"Deposits in [Coast] tiles always provide [5] resources",
+		"Guaranteed with Strategic Balance resource option",
+		"Generated with weight [65] <in [Marsh] tiles> <in tiles without [Hill]>",
+		"Generated with weight [40] <in [Featureless] [Tundra] tiles>",
+		"Generated with weight [60] <in [Featureless] [Snow] tiles>",
+		"Generated with weight [65] <in [Featureless] [Desert] tiles>",
+		"Generated with weight [100] <in [Featureless] [Coast] tiles>",
+		"Minor deposits generated with weight [20] <in [Marsh] tiles> <in tiles without [Hill]>",
+		"Minor deposits generated with weight [10] <in [Jungle] tiles> <in tiles without [Hill]>",
+		"Minor deposits generated with weight [10] <in [Featureless] [Desert] tiles>",
+		"Minor deposits generated with weight [20] <in [Featureless] [Tundra] tiles>",
+		"Minor deposits generated with weight [20] <in [Featureless] [Snow] tiles>"
+	],
+	"majorDepositAmount": {"sparse": 6, "default": 10, "abundant": 14}, /* 5, 7, 9 */
+	"minorDepositAmount": {"sparse": 3, "default": 5, "abundant": 7} /* 2, 3, 3 */
+},
+{
+	"name": "Aluminum",
+	"resourceType": "Strategic",
+	"revealedBy": "Electricity",
+	"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle"],
+	"production": 1,
+	"improvement": "Mine",
+	"improvementStats": {"production": 1},
+	"uniques": [
+		"Generated with weight [15] <in [Featureless] [Tundra] tiles>",
+		"Generated with weight [15] <in [Featureless] [Snow] tiles>",
+		"Generated with weight [39] <in [Hill] tiles>",
+		"Minor deposits generated with weight [20] <in [Jungle] tiles>",
+		"Minor deposits generated with weight [10] <in [Featureless] [Desert] tiles>"
+	],
+	"majorDepositAmount": {"sparse": 6, "default": 10, "abundant": 14}, /* 5, 8, 10 */
+	"minorDepositAmount": {"sparse": 3, "default": 5, "abundant": 7} /* 2, 3, 3 */
+},
+/* Bonus Resources */
+{
+	"name": "Outpost Site",
+	"resourceType": "Bonus",
+	"terrainsCanBeFoundOn": ["Hill","Plains","Grassland","Tundra","Forest"],
+	"improvement": "Outpost",
+	"improvementStats": {"food": 1, "production": 1},
+	"uniques": [
+		"Generated on every [15] tiles <in [Plains] tiles>",
+		"Generated on every [15] tiles <in [Grassland] tiles>",
+		"Generated on every [15] tiles <in [Tundra] tiles>"
+	]
 }
 ]
