@@ -1,0 +1,194 @@
+[
+/* Ranged+Siege */
+{
+	"name": "Volley",
+	"prerequisites": ["Accuracy I","Barrage I"],
+	"uniques": [
+		"[+50]% Strength <vs cities>",
+		"[+50]% Strength <when fighting in [Outpost] tiles> <when attacking>"
+	],
+	"unitTypes": ["Archery","Ranged Gunpowder","Siege"]
+},
+/* Bomber + Missile + Ranged, Armored Water */
+{
+	"name": "Siege I",
+	"uniques": [
+		"[+33]% Strength <vs cities>",
+		"[+33]% Strength <when fighting in [Outpost] tiles> <when attacking>"
+	],
+	"unitTypes": ["Bomber","Missile","Ranged Water","Armored Water"]
+},
+{
+	"name": "Siege II",
+	"prerequisites": ["Siege I"],
+	"uniques": [
+		"[+33]% Strength <vs cities>",
+		"[+33]% Strength <when fighting in [Outpost] tiles> <when attacking>"
+	],
+	"unitTypes": ["Bomber","Missile","Ranged Water","Armored Water"]
+},
+{
+	"name": "Siege III",
+	"prerequisites": ["Siege II"],
+	"uniques": [
+		"[+34]% Strength <vs cities>",
+		"[+34]% Strength <when fighting in [Outpost] tiles> <when attacking>"
+	],
+	"unitTypes": ["Bomber","Missile","Ranged Water","Armored Water"]
+},
+{
+	"name": "Air Targeting I",
+	"uniques": ["[+33]% Strength <vs [Water] units>"],
+	"unitTypes": ["Fighter","Bomber","Missile"]
+},
+{
+	"name": "Air Targeting II",
+	"prerequisites": ["Air Targeting I"],
+	"uniques": ["[+33]% Strength <vs [Water] units>"],
+	"unitTypes": ["Fighter","Bomber","Missile"]
+},
+{
+	"name": "Air Targeting III",
+	"prerequisites": ["Air Targeting II"],
+	"uniques": ["[+34]% Strength <vs [Water] units>"],
+	"unitTypes": ["Fighter","Bomber","Missile"]
+},
+{
+	"name": "Operational Range",
+	"prerequisites": ["Interception I", "Dogfighting I", "Siege I", "Bombardment I","Air Targeting I"],
+	"uniques": ["[+2] Range"],
+	"unitTypes": ["Fighter","Bomber","Missile"]
+},
+/* Ranged Water, Armored Water, Air units */
+{
+	"name": "Bombardment I",
+	"uniques": ["[+33]% Strength <vs [Land] units>"],
+	"unitTypes": ["Ranged Water","Armored Water","Fighter","Bomber","Missile"]
+},
+{
+	"name": "Bombardment II",
+	"prerequisites": ["Bombardment I"],
+	"uniques": ["[+33]% Strength <vs [Land] units>"],
+	"unitTypes": ["Ranged Water","Armored Water","Fighter","Bomber","Missile"]
+},
+{
+	"name": "Bombardment III",
+	"prerequisites": ["Bombardment II"],
+	"uniques": ["[+34]% Strength <vs [Land] units>"],
+	"unitTypes": ["Ranged Water","Armored Water","Fighter","Bomber","Missile"]
+}
+/* Missile only */
+{
+	"name": "ECCM I",
+	"uniques": ["Damage taken from interception reduced by [+25]%"],
+	"unitTypes": ["Missile"]
+},
+{
+	"name": "ECCM II",
+	"prerequisites": ["ECCM I"],
+	"uniques": ["Damage taken from interception reduced by [+25]%"],
+	"unitTypes": ["Missile"]
+},
+{
+	"name": "ECCM III",
+	"prerequisites": ["ECCM II"],
+	"uniques": ["Damage taken from interception reduced by [+25]%"],
+	"unitTypes": ["Missile"]
+}
+/* Water melee */
+{
+	"name": "Boarding Party I",
+	"uniques": [
+		"[+15]% Strength <vs [Melee Water] units> <when attacking>",
+		"[+15]% Strength <vs [Ranged Water] units> <when attacking>",
+		"[+15]% Strength <vs [Melee Water] units> <when defending>"
+	],
+	"unitTypes": ["Melee Water"]
+},
+{
+	"name": "Boarding Party II",
+	"prerequisites": ["Boarding Party I"],
+	"uniques": [
+		"[+15]% Strength <vs [Melee Water] units> <when attacking>",
+		"[+15]% Strength <vs [Ranged Water] units> <when attacking>",
+		"[+15]% Strength <vs [Melee Water] units> <when defending>"
+	],
+	"unitTypes": ["Melee Water"]
+},
+{
+	"name": "Boarding Party III",
+	"prerequisites": ["Boarding Party II"],
+	"uniques": [
+		"[+15]% Strength <vs [Melee Water] units> <when attacking>",
+		"[+15]% Strength <vs [Ranged Water] units> <when attacking>",
+		"[+15]% Strength <vs [Melee Water] units> <when defending>"
+	],
+	"unitTypes": ["Melee Water"]
+},
+
+{
+	"name": "Coastal Raider I",
+	"uniques": [
+		"[+20]% Strength <vs cities> <when attacking>",
+		"[+20]% Strength <when fighting in [Outpost] tiles> <when attacking>",
+		"Earn [33]% of the damage done to [City] units as [Gold]"
+	],
+	"unitTypes": ["Melee Water"]
+},
+{
+	"name": "Coastal Raider II",
+	"prerequisites": ["Coastal Raider I"],
+	"uniques": [
+		"[+20]% Strength <vs cities> <when attacking>",
+		"[+20]% Strength <when fighting in [Outpost] tiles> <when attacking>",
+		"Earn [33]% of the damage done to [City] units as [Gold]"
+	],
+	"unitTypes": ["Melee Water"]
+},
+{
+	"name": "Coastal Raider III",
+	"prerequisites": ["Coastal Raider II"],
+	"uniques": [
+		"[+20]% Strength <vs cities> <when attacking>",
+		"[+20]% Strength <when fighting in [Outpost] tiles> <when attacking>",
+		"Earn [33]% of the damage done to [City] units as [Gold]"
+	],
+	"unitTypes": ["Melee Water"]
+},
+/* Ranged Water */
+{
+	"name": "Targeting I",
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Ranged Water","Armored Water"]
+},
+{
+	"name": "Targeting II",
+	"prerequisites": ["Targeting I"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Ranged Water","Armored Water"]
+},
+{
+	"name": "Targeting III",
+	"prerequisites": ["Targeting II"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Ranged Water","Armored Water"]
+},
+/* Aircraft Carrier, Armored Water */
+{
+	"name": "Armor Plating I",
+	"uniques": ["[+25]% Strength <when defending>"],
+	"unitTypes": ["Aircraft Carrier","Armored Water"]
+},
+{
+	"name": "Armor Plating II",
+	"prerequisites": ["Armor Plating I"],
+	"uniques": ["[+25]% Strength <when defending>"],
+	"unitTypes": ["Aircraft Carrier","Armored Water"]
+},
+{
+	"name": "Armor Plating III",
+	"prerequisites": ["Armor Plating II"],
+	"uniques": ["[+25]% Strength <when defending>"],
+	"unitTypes": ["Aircraft Carrier","Armored Water"]
+},
+]
