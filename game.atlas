@@ -1,0 +1,321 @@
+
+game.png
+size: 2048, 256
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+ImprovementIcons/Outpost
+  rotate: false
+  xy: 868, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Outpost Site
+  rotate: false
+  xy: 976, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Outpost
+  rotate: false
+  xy: 1660, 185
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Outpost-Classical era
+  rotate: false
+  xy: 1660, 185
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Outpost-Atomic era
+  rotate: false
+  xy: 1732, 182
+  size: 64, 65
+  orig: 64, 65
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Outpost-Industrial era
+  rotate: false
+  xy: 1804, 186
+  size: 64, 61
+  orig: 64, 61
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Outpost-Medieval era
+  rotate: false
+  xy: 1876, 182
+  size: 64, 65
+  orig: 64, 65
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Outpost-Modern era
+  rotate: false
+  xy: 1948, 182
+  size: 64, 65
+  orig: 64, 65
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Outpost-Renaissance era
+  rotate: false
+  xy: 1300, 132
+  size: 62, 55
+  orig: 62, 55
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Armored Cruiser
+  rotate: false
+  xy: 1192, 87
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Atomic Cannon
+  rotate: false
+  xy: 4, 4
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Cog
+  rotate: false
+  xy: 1300, 195
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Cruiser
+  rotate: false
+  xy: 1372, 195
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Dreadnought
+  rotate: false
+  xy: 1444, 195
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Field Artillery
+  rotate: false
+  xy: 1370, 160
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Field Cannon
+  rotate: false
+  xy: 44, 4
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/French 75
+  rotate: false
+  xy: 1410, 160
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Heavy Artillery
+  rotate: false
+  xy: 84, 4
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Howitzer
+  rotate: false
+  xy: 1450, 160
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Longship
+  rotate: false
+  xy: 1516, 195
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Nuclear Carrier
+  rotate: false
+  xy: 1588, 195
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Siege Artillery
+  rotate: false
+  xy: 124, 4
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Siege Cannon
+  rotate: false
+  xy: 1490, 160
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Siege Mortar
+  rotate: false
+  xy: 1192, 27
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+UnitIcons/3rd Gen Jet Fighter
+  rotate: false
+  xy: 4, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/4th Gen Jet Fighter
+  rotate: false
+  xy: 4, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/5th Gen Jet Fighter
+  rotate: false
+  xy: 112, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Armored Cruiser
+  rotate: false
+  xy: 112, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Atomic Cannon
+  rotate: false
+  xy: 220, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Cog
+  rotate: false
+  xy: 220, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Cruiser
+  rotate: false
+  xy: 328, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Dreadnought
+  rotate: false
+  xy: 328, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Field Artillery
+  rotate: false
+  xy: 436, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Field Cannon
+  rotate: false
+  xy: 544, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/French 75
+  rotate: false
+  xy: 544, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Heavy Artillery
+  rotate: false
+  xy: 652, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Howitzer
+  rotate: false
+  xy: 652, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Hypersonic Missile
+  rotate: false
+  xy: 760, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Longship
+  rotate: false
+  xy: 760, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Nuclear Carrier
+  rotate: false
+  xy: 868, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Siege Artillery
+  rotate: false
+  xy: 976, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Siege Cannon
+  rotate: false
+  xy: 1084, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Siege Mortar
+  rotate: false
+  xy: 1084, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Strategic Bomber
+  rotate: false
+  xy: 1192, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/ECCM
+  rotate: false
+  xy: 436, 147
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
